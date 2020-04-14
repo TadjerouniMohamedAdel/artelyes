@@ -8,18 +8,15 @@ import Container from '@material-ui/core/Container'
 import Toolbar from '@material-ui/core/Toolbar';
 import List from '@material-ui/core/List';
 import Typography from '@material-ui/core/Typography';
-import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
+
 import Router from './Router';
-import {Tab,Tabs} from '@material-ui/core'
+import {Tab,Tabs, Hidden} from '@material-ui/core'
 import {Link} from 'react-router-dom'
 
 const drawerWidth = 240;
@@ -102,31 +99,47 @@ export default function PersistentDrawerLeft() {
         className={clsx(classes.appBar, {
           [classes.appBarShift]: open,
         })}
+        style={{width:"100%"}}
       >
         <Toolbar style={{flex:1,flexDirection:"row",justifyContent:"space-between"}}>
+          <div>
+
           <IconButton
             color="inherit"
             aria-label="open drawer"
             onClick={handleDrawerOpen}
             edge="start"
             className={clsx(classes.menuButton, open && classes.hide)}
-          >
+            >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" noWrap>
+          <Typography variant="h6" noWrap style={{display:"inline"}}>
             Persistent drawer
           </Typography>
+          </div>
+          <Hidden only={"xs"}>
         <Tabs
-            // value={value}
+            // value={0}
             // onChange={handleChange}
             indicatorColor="primary"
             textColor="primary"
         >
-            <Tab label="Item One" /> 
-            <Tab label="Item One" />
-            <Tab label="Item Two" />
-            <Tab label="Item Three" />
+
+          <Link  onClick={() => handleDrawerClose()} to="/" style={{textDecoration:"none",color:"black"}}>
+            <Tab label="Acceuil" /> 
+          </Link>
+          <Link  onClick={() => handleDrawerClose()} to="/artist" style={{textDecoration:"none",color:"black"}}>
+            <Tab label="Artiste" />
+          </Link>
+          <Link  onClick={() => handleDrawerClose()} to="/projects" style={{textDecoration:"none",color:"black"}}>
+            <Tab label="Oeuvres" />
+          </Link>
+          <Link  onClick={() => handleDrawerClose()} to="/contacts" style={{textDecoration:"none",color:"black"}}>
+            <Tab label="Contact" />
+          
+          </Link>
         </Tabs>
+        </Hidden>
         </Toolbar>
       </AppBar>
       <Drawer
@@ -143,23 +156,25 @@ export default function PersistentDrawerLeft() {
             {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
           </IconButton>
         </div>
-        {/* {/* <Divider /> */}
         <List>
          
          <Link  onClick={() => handleDrawerClose()} to="/" style={{textDecoration:"none",color:"black"}}>
              <ListItem button key={"home"}>
-             {/* <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon> */}
              <ListItemText primary={"Home"} />
              </ListItem>
          </Link>
          <Link  onClick={() => handleDrawerClose()} to="/artist" style={{textDecoration:"none",color:"black"}}>
              <ListItem button key={"Artist"}>
-             {/* <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon> */}
              <ListItemText primary={"Artist"} />
              </ListItem>
-         </Link><Link  onClick={() => handleDrawerClose()} to="/contacts" style={{textDecoration:"none",color:"black"}}>
+         </Link>
+         <Link  onClick={() => handleDrawerClose()} to="/projects" style={{textDecoration:"none",color:"black"}}>
+             <ListItem button key={"Oeuvres"}>
+             <ListItemText primary={"Oeuvres"} />
+             </ListItem>
+         </Link>
+         <Link  onClick={() => handleDrawerClose()} to="/contacts" style={{textDecoration:"none",color:"black"}}>
              <ListItem button key={"Contacts"}>
-             {/* <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon> */}
              <ListItemText primary={"Contacts"} />
              </ListItem>
          </Link>

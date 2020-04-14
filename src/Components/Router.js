@@ -3,6 +3,7 @@ import {Switch, Route} from 'react-router-dom'
 import Landing from './Landing'
 import Contacts from './Contacts'
 import Artist from './Artist'
+import Projects from './Projects'
 
 export default function Router() {
     return (
@@ -13,6 +14,9 @@ export default function Router() {
                 </Route>
                 <Route path="/contacts">
                     <Contacts />
+                </Route>
+                <Route path="/projects">
+                    <Projects />
                 </Route>
                 <Route path="/">
                     <Landing />
