@@ -56,7 +56,7 @@ export default class Projects extends Component {
                                         {item.description.substring(0,50)}...
                                     </p>
                                     <div>
-                                        <Button variant="outlined">
+                                        <Button variant="outlined" style={{fontFamily:"Source Sans Pro, Sans-Serif",fontWeight:"600",fontSize:14}}>
                                             View Details
                                         </Button>
                                     </div>

@@ -29,6 +29,7 @@
     margin-bottom: 2px;
     font-size: 18px;
     font-weight: 600;
+    text-align: center;
     font-style: italic;
     font-family: 'Playfair Display', serif;
     color: #131313;
@@ -40,5 +41,5 @@
 }
 .project-image{
     width: 280px;
-    height: 233px;
+    height: 220px;
 }

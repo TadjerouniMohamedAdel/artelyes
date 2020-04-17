@@ -123,20 +123,26 @@ export default function PersistentDrawerLeft() {
             indicatorColor="primary"
             textColor="primary"
         >
-
-          <Link  onClick={() => handleDrawerClose()} to="/" style={{textDecoration:"none",color:"black"}}>
-            <span className="artist-font navbar-item">Acceuil</span> 
-          </Link>
-          <Link  onClick={() => handleDrawerClose()} to="/artist" style={{textDecoration:"none",color:"black"}}>
-            <span className="artist-font navbar-item">Artiste</span>
-          </Link>
-          <Link  onClick={() => handleDrawerClose()} to="/projects" style={{textDecoration:"none",color:"black"}}>
-            <span className="artist-font navbar-item">Oeuvres</span>
-          </Link>
-          <Link  onClick={() => handleDrawerClose()} to="/contacts" style={{textDecoration:"none",color:"black"}}>
-            <span className="artist-font navbar-item">Contact</span>
-          
-          </Link>
+          <span className="artist-font navbar-item">
+              <Link  className="navbar-item-link" onClick={() => handleDrawerClose()} to="/">
+                  Acceuil
+              </Link>
+          </span> 
+          <span className="artist-font navbar-item">
+              <Link  className="navbar-item-link" onClick={() => handleDrawerClose()} to="/artist">
+                  Artiste
+              </Link>
+          </span>
+          <span className="artist-font navbar-item">
+              <Link  className="navbar-item-link" onClick={() => handleDrawerClose()} to="/projects">
+                  Oeuvres
+              </Link>
+          </span>
+          <span className="artist-font navbar-item">
+              <Link  className="navbar-item-link" onClick={() => handleDrawerClose()} to="/contacts">
+                  Contact
+              </Link>
+          </span>
         </div>
         </Hidden>
         </Toolbar>
