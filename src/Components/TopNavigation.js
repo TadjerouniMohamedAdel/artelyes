@@ -99,13 +99,13 @@ export default function PersistentDrawerLeft() {
         className={clsx(classes.appBar, {
           [classes.appBarShift]: open,
         })}
-        style={{width:"100%"}}
+        style={{width:"100%",backgroundColor:"white"}}
       >
         <Toolbar style={{flex:1,flexDirection:"row",justifyContent:"space-between"}}>
           <div>
 
           <IconButton
-            color="inherit"
+            style={{color:"#d4af37"}}
             aria-label="open drawer"
             onClick={handleDrawerOpen}
             edge="start"
@@ -113,32 +113,31 @@ export default function PersistentDrawerLeft() {
             >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" noWrap style={{display:"inline"}}>
-            Persistent drawer
+          <Typography variant="h6" noWrap style={{display:"inline",color:"#d4af37",fontFamily:"Playfair Display, serif",fontStyle:"italic"}}>
+            Artelyes
           </Typography>
           </div>
           <Hidden only={"xs"}>
-        <Tabs
-            // value={0}
-            // onChange={handleChange}
+        <div
+            className="navbar-tabs"
             indicatorColor="primary"
             textColor="primary"
         >
 
           <Link  onClick={() => handleDrawerClose()} to="/" style={{textDecoration:"none",color:"black"}}>
-            <Tab label="Acceuil" /> 
+            <span className="artist-font navbar-item">Acceuil</span> 
           </Link>
           <Link  onClick={() => handleDrawerClose()} to="/artist" style={{textDecoration:"none",color:"black"}}>
-            <Tab label="Artiste" />
+            <span className="artist-font navbar-item">Artiste</span>
           </Link>
           <Link  onClick={() => handleDrawerClose()} to="/projects" style={{textDecoration:"none",color:"black"}}>
-            <Tab label="Oeuvres" />
+            <span className="artist-font navbar-item">Oeuvres</span>
           </Link>
           <Link  onClick={() => handleDrawerClose()} to="/contacts" style={{textDecoration:"none",color:"black"}}>
-            <Tab label="Contact" />
+            <span className="artist-font navbar-item">Contact</span>
           
           </Link>
-        </Tabs>
+        </div>
         </Hidden>
         </Toolbar>
       </AppBar>

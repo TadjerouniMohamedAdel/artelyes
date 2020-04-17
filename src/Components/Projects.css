@@ -1,3 +1,11 @@
+.projects-section-title{
+    font-size: 24px;
+    font-weight: 700;
+    font-style: italic;
+    font-family: 'Playfair Display', serif;
+    color: #131313;
+    text-align: center;
+}
 .projects-container{
     display: flex;
     flex-direction: row;
@@ -11,9 +19,26 @@
     /* justify-content: center; */
     align-items: center;
     width:280px;
-    height: 340px;
+    height: 400px;
     padding:20px;
     padding-top: 0px;
     margin:10px;
     overflow: hidden;
+}
+.project-title{
+    margin-bottom: 2px;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: italic;
+    font-family: 'Playfair Display', serif;
+    color: #131313;
+}
+
+.project-description{
+    font-size:15px;
+    text-align:center;
+}
+.project-image{
+    width: 280px;
+    height: 233px;
 }
