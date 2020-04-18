@@ -120,8 +120,7 @@ export default function PersistentDrawerLeft() {
           <Hidden only={"xs"}>
         <div
             className="navbar-tabs"
-            indicatorColor="primary"
-            textColor="primary"
+           
         >
           <span className="artist-font navbar-item">
               <Link  className="navbar-item-link" onClick={() => handleDrawerClose()} to="/">
@@ -161,7 +160,7 @@ export default function PersistentDrawerLeft() {
             {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
           </IconButton>
         </div>
-        <List>
+        {/* <List>
          
          <Link  onClick={() => handleDrawerClose()} to="/" style={{textDecoration:"none",color:"black"}}>
              <ListItem button key={"home"}>
@@ -186,7 +185,32 @@ export default function PersistentDrawerLeft() {
 
         
          
-     </List>
+     </List> */}
+     <div
+            className="navbar-tabs-drawer"
+           
+        >
+          <span className="artist-font navbar-item">
+              <Link  className="navbar-item-link" onClick={() => handleDrawerClose()} to="/">
+                  Acceuil
+              </Link>
+          </span> 
+          <span className="artist-font navbar-item">
+              <Link  className="navbar-item-link" onClick={() => handleDrawerClose()} to="/artist">
+                  Artiste
+              </Link>
+          </span>
+          <span className="artist-font navbar-item">
+              <Link  className="navbar-item-link" onClick={() => handleDrawerClose()} to="/projects">
+                  Oeuvres
+              </Link>
+          </span>
+          <span className="artist-font navbar-item">
+              <Link  className="navbar-item-link" onClick={() => handleDrawerClose()} to="/contacts">
+                  Contact
+              </Link>
+          </span>
+        </div>
       </Drawer>
       <main
         className={clsx(classes.content, {
