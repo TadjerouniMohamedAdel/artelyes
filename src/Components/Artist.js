@@ -1,11 +1,14 @@
 import React, { Component } from 'react'
 import './Artist.css'
-import { elyes1, artist1 } from '../Images'
+import { elyes1, artist1, underline } from '../Images'
 export default class Artist extends Component {
     render() {
         return (
-            <div>
-                <h3 className="profile-section-title">Elyes Taib Lamine</h3>
+            <div >
+                <h3 className="profile-section-title">
+                    Elyes Taib Lamine<br/>
+                    <img src={underline}  style={{marginTop:-10}} width={350} height={50}/>
+                </h3>
                 <section className="profile-section">
                     <div className="circle circle1">
                         <img src={elyes1} />
@@ -21,14 +24,14 @@ export default class Artist extends Component {
                 </section>
 
                 <section className="profile-section">
-                    <div className="circle circle3">
+                    <div className="circle circle2">
                         <img src={artist1} />
                     </div>
                     <div>
                         <p className="description-font">
                                 A travers ses oeuvres, it essaye de rendre kernels quelques endroits anciens, telle la Casbah d'Alger, et certains lieux empruntes ca et la, au gre dune promenade, ou la beaute du site ne le laisse pas indifferent. 
                                 II exprime ce qu'il ressent et qui correspond a ('ensemble meme de son etre. II possede une technique personnelle, simple et direct dont la caracteristique principale est determine par la qualite de I'homme, ses origines et, 00 le mystere de la creativite reside dans un perpetuel duel avec la nature. 
-                                <br/><br/><br/>it dit souvent: 
+                                it dit souvent: 
                                 "A ce que la nature du beau presente mon regard, la dexterite de mes mains, essaye toujours d'en preserver I'esthetique." 
                                 C'est ainsi, qu'au detour d'une rue, une atmosphere, un paysage, Alger, Paris et sa banlieue, que mes choix sont delimites, parceque chaque lieu, chaque endroit est particulier, et temoigne d'une vie. 
                                 [artiste, engage tout son etre dans ce qu'il entreprend, et base son oeuvre sur les jeux d'ombres colorees et de lumiere. Cela confere une dimension joyeuse, et nouvelle a ses toiles, et une profondeur dans laquelle on aime a se perdre. 
