@@ -18,14 +18,14 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Router from './Router';
 import {Tab,Tabs, Hidden} from '@material-ui/core'
 import {Link} from 'react-router-dom'
-import { artelyesLogo } from '../Images';
+import { artelyesLogo, top } from '../Images';
 
 const drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
-    // backgroundColor:"gray",
+    backgroundColor:"white",
     // backgroundImage: `url(${artelyesLogo})`
   },
   appBar: {
@@ -103,7 +103,7 @@ export default function PersistentDrawerLeft() {
         className={clsx(classes.appBar, {
           [classes.appBarShift]: open,
         })}
-        style={{width:"100%",backgroundColor:"white"}}
+        style={{width:"100%",backgroundColor:"white",boxShadow:"none"}}
       >
         <Toolbar style={{flex:1,flexDirection:"row",justifyContent:"space-between"}}>
           
@@ -226,7 +226,11 @@ export default function PersistentDrawerLeft() {
       >
         <div className={classes.drawerHeader} />
         <Container maxWidth={false}>
+            <div style={{flex:1,textAlign:"center",marginTop:20}}>
+              <img src={top} style={{textAlign:"center"}} width={1200} height={150}/>
+            </div>
             <Router />
+
 
         </Container>
       </main>
