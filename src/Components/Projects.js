@@ -39,7 +39,7 @@ const data=[
 export default class Projects extends Component {
     render() {
         return (
-            <div>
+            <div style={{flex:1}}>
                 <h3 className="projects-section-title">Les dernieres oeuvres</h3>
                 <div className="projects-container">
                     {

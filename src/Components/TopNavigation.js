@@ -18,6 +18,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Router from './Router';
 import {Tab,Tabs, Hidden} from '@material-ui/core'
 import {Link} from 'react-router-dom'
+import { artelyesLogo } from '../Images';
 
 const drawerWidth = 240;
 
@@ -82,6 +83,7 @@ export default function PersistentDrawerLeft() {
   const classes = useStyles();
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
+  const [linkActive,setLink] = React.useState(0)
 
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -102,20 +104,23 @@ export default function PersistentDrawerLeft() {
         style={{width:"100%",backgroundColor:"white"}}
       >
         <Toolbar style={{flex:1,flexDirection:"row",justifyContent:"space-between"}}>
-          <div>
+          
+          <div className="first-nav-part">
+            <IconButton
+              style={{flex:1,color:"#d4af37"}}
+              aria-label="open drawer"
+              onClick={handleDrawerOpen}
+              edge="start"
+              className={clsx(classes.menuButton, open && classes.hide)}
+              >
+              <MenuIcon />
+            </IconButton>
+            <div style={{marginTop:-20,marginBottom:-30}}>
+            <Link   onClick={() => {handleDrawerClose();setLink(0)}} to="/">
+                <img src={artelyesLogo} className="arteleyes-logo"/>
+            </Link>
+            </div>
 
-          <IconButton
-            style={{color:"#d4af37"}}
-            aria-label="open drawer"
-            onClick={handleDrawerOpen}
-            edge="start"
-            className={clsx(classes.menuButton, open && classes.hide)}
-            >
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" noWrap style={{display:"inline",color:"#d4af37",fontFamily:"Playfair Display, serif",fontStyle:"italic"}}>
-            Artelyes
-          </Typography>
           </div>
           <Hidden only={"xs"}>
         <div
@@ -123,22 +128,22 @@ export default function PersistentDrawerLeft() {
            
         >
           <span className="artist-font navbar-item">
-              <Link  className="navbar-item-link" onClick={() => handleDrawerClose()} to="/">
+              <Link  className={"navbar-item-link"+(linkActive == 0 ? " active-link" : "")} onClick={() => {handleDrawerClose();setLink(0)}} to="/">
                   Acceuil
               </Link>
           </span> 
           <span className="artist-font navbar-item">
-              <Link  className="navbar-item-link" onClick={() => handleDrawerClose()} to="/artist">
+              <Link  className={"navbar-item-link"+(linkActive == 1 ? " active-link" : "")} onClick={() => {handleDrawerClose();setLink(1)}} to="/artist">
                   Artiste
               </Link>
           </span>
           <span className="artist-font navbar-item">
-              <Link  className="navbar-item-link" onClick={() => handleDrawerClose()} to="/projects">
+              <Link  className={"navbar-item-link"+(linkActive == 2 ? " active-link" : "")} onClick={() => {handleDrawerClose();setLink(2)}} to="/projects">
                   Oeuvres
               </Link>
           </span>
           <span className="artist-font navbar-item">
-              <Link  className="navbar-item-link" onClick={() => handleDrawerClose()} to="/contacts">
+              <Link  className={"navbar-item-link"+(linkActive == 3 ? " active-link" : "")} onClick={() => {handleDrawerClose();setLink(3)}} to="/contacts">
                   Contact
               </Link>
           </span>

@@ -55,3 +55,21 @@
     transition: 0.3s;
 }
 
+
+.navbar-item-link.active-link::after{
+    width:50%;
+    transition: width 0.3s;
+}
+.navbar-item-link.active-link{
+    color:#d4af37;
+    transition: 0.3s;
+}
+
+.arteleyes-logo{
+    width:120px;
+    height: 120px;
+}
+.first-nav-part{
+    display: flex;
+    flex-direction: row;
+}
