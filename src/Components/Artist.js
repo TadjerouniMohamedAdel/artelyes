@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './Artist.css'
-import { elyes1, artist1, underline } from '../Images'
+import { elyes1, artist1, underline, artist2 } from '../Images'
+import { Paper } from '@material-ui/core'
 export default class Artist extends Component {
     render() {
         return (
@@ -9,6 +10,7 @@ export default class Artist extends Component {
                     Elyes Taib Lamine<br/>
                     <img src={underline}  style={{marginTop:-10}} width={350} height={50}/>
                 </h3>
+                <Paper>
                 <section className="profile-section">
                     <div className="circle circle1">
                         <img src={elyes1} />
@@ -23,7 +25,12 @@ export default class Artist extends Component {
                     </div> 
                 </section>
 
+                </Paper>
+                <Paper style={{marginTop:50}}>
                 <section className="profile-section">
+                <div className="circle circle1">
+                        <img src={artist2} />
+                    </div>
                     <div className="circle circle2">
                         <img src={artist1} />
                     </div>
@@ -40,6 +47,8 @@ export default class Artist extends Component {
 
                     </div> 
                 </section>
+
+                </Paper>
             </div>
         )
     }
