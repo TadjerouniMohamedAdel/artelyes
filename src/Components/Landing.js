@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './Landing.css'
 import { elyes2, elyes1, demandeMariage, saintLouis2, peniche, pontNapoleon, academie, grandOrsay, saintLouis1, bastille, elyes4, elyes3 } from '../Images'
-import { Paper,Button } from '@material-ui/core'
+import { Paper,Button,Icon, TextField } from '@material-ui/core'
 import Swiper from 'react-id-swiper';
 import {Link} from 'react-router-dom'
 
@@ -101,8 +101,8 @@ export default class Landing extends Component {
 
                    </div>
                     <div className="link-projects artist-font">
-                        <Link  className={"navbar-item-link"}  to="/projects">
-                                voir tous les Oeuvres
+                        <Link  to="/projects" style={{color:"#d4af37",fontSize:17}}>
+                           voir tous les Oeuvres
                         </Link>
                     </div>
                </div>
@@ -119,7 +119,53 @@ export default class Landing extends Component {
                             <i class="fa fa-quote-left" aria-hidden="true" style={{marginRight:15}}></i>
                             A ce que la nature du beau presente mon regard, la dexterite de mes mains, essaye toujours d'en preserver I'esthetique. 
                             C'est ainsi, qu'au detour d'une rue, une atmosphere, un paysage, Alger, Paris et sa banlieue, que mes choix sont delimites, parceque chaque lieu, chaque endroit est particulier, et temoigne d'une vie.<i style={{marginLeft:15}} class="fa fa-quote-right" aria-hidden="true"></i>
+                            <br/><br/>
+                        <Link to="/artist" style={{color:"#d4af37",fontSize:17}}>
+                               Apprendre plus sur l'artist
+                        </Link>
                         </p>
+                    </div>
+               </div>
+               <div className="contacts-landing">
+                    <h3>
+                      contacts
+                   </h3>
+                    <div className="contacts-paper">
+                        <div className="contacts-paper-form">
+                            <div style={{margin:10}}>
+                                <TextField 
+                                    id="outlined-basic" 
+                                    label="Email" 
+                                    variant="outlined" />
+                            </div>
+                            <div style={{margin:10}}>
+                                <TextField 
+                                    id="outlined-basic" 
+                                    label="Sujet" 
+                                    variant="outlined" />
+                            </div>
+                            <div style={{margin:10}}>
+                                <TextField
+                                    id="outlined-multiline-static"
+                                    label="Message"
+                                    multiline
+                                    rows={4}
+                                    variant="outlined"
+                                />
+                            </div>
+
+                        </div>
+                        <div className="contacts-paper-info">
+                            <p>
+                                Excepteur eu ut sit in laboris minim mollit officia culpa. Culpa ipsum qui culpa ullamco aliqua. Eiusmod elit ea fugiat dolore ea magna anim cupidatat. Laboris nisi magna cillum labore irure laborum veniam et laboris nostrud.
+
+Commodo pariatur qui est anim et qui non reprehenderit et ullamco. Ad est et qui quis occaecat minim ea nulla. Pariatur occaecat dolore tempor elit. Irure amet mollit sunt irure et anim exercitation quis cupidatat ullamco.
+Ut qui amet esse nisi esse nisi duis. Id irure do sunt occaecat. Officia nisi exercitation ex fugiat aliqua tempor voluptate elit adipisicing proident consectetur laborum esse. Et veniam fugiat incididunt dolor nostrud ut pariatur sit deserunt commodo elit eiusmod. Nulla dolor enim commodo dolor adipisicing officia nulla ut. Do nisi pariatur amet duis est ea labore mollit eu mollit Lorem ipsum. Cillum fugiat aliqua in tempor do culpa ullamco voluptate quis proident fugiat sit quis.
+
+Nisi qui consequat cupidatat minim eiusmod. Anim eu qui ullamco non adipisicing occaecat reprehenderit veniam labore. Ullamco cillum dolor nulla deserunt. Non id qui id ea cillum.
+                            </p>
+                        </div>
+
                     </div>
                </div>
             </div>
