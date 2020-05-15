@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Paper, Typography, Button } from '@material-ui/core'
 import './Projects.css'
-import { academie, entreCopines, bastille, demandeMariage, peniche, pontNapoleon, grandOrsay, saintLouis1, saintLouis2, solitaire, notreDame, pontsAmours, promeneur, pecheur, fleursSous, juleVer, plateau, underline } from '../Images'
+import { academie, entreCopines, bastille, demandeMariage, peniche, pontNapoleon, grandOrsay, saintLouis1, saintLouis2, solitaire, notreDame, pontsAmours, promeneur, pecheur, fleursSous, juleVer, plateau, underline, top } from '../Images'
 
 const data=[
     {title:"La demande en mariage",image:demandeMariage,description:"Sint qui sit id irure ipsum qui consectetur nostrud. Tempor aliquip aliquip in veniam commodo deserunt commodo id velit Lorem. Amet cupidatat duis excepteur sunt magna. Consectetur incididunt amet qui anim fugiat sint nulla. Aliqua eiusmod deserunt reprehenderit Lorem excepteur incididunt. Nisi sit reprehenderit ullamco Lorem eiusmod. Anim minim labore minim dolor eu officia."},
@@ -40,6 +40,9 @@ export default class Projects extends Component {
     render() {
         return (
             <div style={{flex:1}}>
+                <div style={{flex:1,textAlign:"center",marginTop:20}}>
+              <img src={top} style={{textAlign:"center"}} width={1200} height={150}/>
+            </div>
                 <h3 className="projects-section-title">Les dernieres oeuvres
                 <br/>
                 <img src={underline} style={{marginTop:-10}} width={350} height={50}/>

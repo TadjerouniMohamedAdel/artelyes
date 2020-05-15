@@ -226,9 +226,7 @@ export default function PersistentDrawerLeft() {
       >
         <div className={classes.drawerHeader} />
         <Container maxWidth={false}>
-            <div style={{flex:1,textAlign:"center",marginTop:20}}>
-              <img src={top} style={{textAlign:"center"}} width={1200} height={150}/>
-            </div>
+            
             <Router />
 
 

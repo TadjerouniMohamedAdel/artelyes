@@ -1,11 +1,14 @@
 import React, { Component } from 'react'
 import './Artist.css'
-import { elyes1, artist1, underline, artist2 } from '../Images'
+import { elyes1, artist1, underline, artist2, top } from '../Images'
 import { Paper } from '@material-ui/core'
 export default class Artist extends Component {
     render() {
         return (
             <div >
+                <div style={{flex:1,textAlign:"center",marginTop:20}}>
+              <img src={top} style={{textAlign:"center"}} width={1200} height={150}/>
+            </div>
                 <h3 className="profile-section-title">
                     Elyes Taib Lamine<br/>
                     <img src={underline}  style={{marginTop:-10}} width={350} height={50}/>
