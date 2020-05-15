@@ -14,11 +14,12 @@ export default class Landing extends Component {
                         </div> 
                         <div className="personal-details-1">
                             <div className="personal-content-1">
-                                <h2>
+                                <h2 className="artist-font">
                                     Elyes Tayeb Lamine <br/>
-                                    <span>
+                                    <span className="description-font">
                                         Artiste Paintre et Proffesseur
                                     </span>
+                                </h2>
                                     <ul>
                                         <li><a style={{backgroundColor:"#3b5995"}} href="#">Fb</a></li>
                                         <li><a style={{backgroundColor:"#55acee"}}href="#">Tw</a></li>
@@ -29,7 +30,6 @@ export default class Landing extends Component {
                                     <a href="#">
                                         Read More
                                     </a>
-                                </h2>
                                  
                             </div>
                         </div>

@@ -45,17 +45,23 @@
     padding:20px;
     box-sizing: border-box;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .personal-card-1 .personal-details-1 .personal-content-1 h2{
     margin:0;
     padding:0;
-    font-size: 24px;
+    font-size: 28px;
     line-height: 0.85em;
-    font-weight:600
+    font-weight:600;
+    text-align: center;
+    margin-bottom: 15px;
 }
 .personal-card-1 .personal-details-1 .personal-content-1 h2 span{
-    font-size:14px;
+    font-size:18px;
     color: #777;
+    font-weight:500;
 }
 .personal-card-1 .personal-details-1 .personal-content-1 ul{
     margin: 0;
