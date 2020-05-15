@@ -41,7 +41,7 @@ export default class Artist extends Component {
                         <p className="description-font">
                                 A travers ses oeuvres, it essaye de rendre kernels quelques endroits anciens, telle la Casbah d'Alger, et certains lieux empruntes ca et la, au gre dune promenade, ou la beaute du site ne le laisse pas indifferent. 
                                 II exprime ce qu'il ressent et qui correspond a ('ensemble meme de son etre. II possede une technique personnelle, simple et direct dont la caracteristique principale est determine par la qualite de I'homme, ses origines et, 00 le mystere de la creativite reside dans un perpetuel duel avec la nature. 
-                                it dit souvent: 
+                                il dit souvent: 
                                 "A ce que la nature du beau presente mon regard, la dexterite de mes mains, essaye toujours d'en preserver I'esthetique." 
                                 C'est ainsi, qu'au detour d'une rue, une atmosphere, un paysage, Alger, Paris et sa banlieue, que mes choix sont delimites, parceque chaque lieu, chaque endroit est particulier, et temoigne d'une vie. 
                                 [artiste, engage tout son etre dans ce qu'il entreprend, et base son oeuvre sur les jeux d'ombres colorees et de lumiere. Cela confere une dimension joyeuse, et nouvelle a ses toiles, et une profondeur dans laquelle on aime a se perdre. 

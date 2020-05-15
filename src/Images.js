@@ -17,6 +17,8 @@ export const saintLouis2 = require("./Images/Saint-Louis.jpg")
 export const solitaire = require("./Images/solitaire.jpg")
 export const elyes1 = require("./Images/elyes1.jpg")
 export const elyes2 = require("./Images/elyes2.jpg")
+export const elyes3 = require("./Images/elyes3.jpg")
+export const elyes4 = require("./Images/elyes4.jpg")
 
 export const artist1 = require("./Images/artist1.jpg")
 export const artist2 = require("./Images/artist2.jpg")
