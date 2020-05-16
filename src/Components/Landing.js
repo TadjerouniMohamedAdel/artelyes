@@ -153,6 +153,14 @@ export default class Landing extends Component {
                                     variant="outlined"
                                 />
                             </div>
+                            <div style={{margin:10}}>
+                                <Button variant="outlined" primary>
+                                        Envoyer
+                                        <Icon>
+                                            send
+                                        </Icon>
+                                </Button>
+                            </div>
 
                         </div>
                         <div className="contacts-paper-info">
