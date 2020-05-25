@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './Landing.css'
-import { elyes2, elyes1, demandeMariage, saintLouis2, peniche, pontNapoleon, academie, grandOrsay, saintLouis1, bastille, elyes4, elyes3 } from '../Images'
+import { elyes2, elyes1, demandeMariage, saintLouis2, peniche, pontNapoleon, academie, grandOrsay, saintLouis1, bastille, elyes4, elyes3, artelyesLogo } from '../Images'
 import { Paper,Button,Icon, TextField } from '@material-ui/core'
 import Swiper from 'react-id-swiper';
 import {Link} from 'react-router-dom'
@@ -47,6 +47,9 @@ export default class Landing extends Component {
                         </div> 
                         <div className="personal-details-1">
                             <div className="personal-content-1">
+                                <div>
+                                    <img src={artelyesLogo} className="logo-landing"/>
+                                </div>
                                 <h2 className="artist-font">
                                     Elyes Tayeb Lamine <br/>
                                     <span className="description-font">
