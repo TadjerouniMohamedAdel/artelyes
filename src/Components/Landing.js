@@ -56,14 +56,16 @@ export default class Landing extends Component {
                                         Artiste Paintre et Proffesseur
                                     </span>
                                 </h2>
-                                    <ul>
-                                        <li><a style={{backgroundColor:"#3b5995"}} href="#">Fb</a></li>
-                                        <li><a style={{backgroundColor:"#55acee"}}href="#">Tw</a></li>
-                                        <li><a style={{backgroundColor:"#b31217"}} href="#">pin</a></li>
-                                        <li><a style={{backgroundColor:"#0077b5"}} href="#">Yt</a></li>
-                                        <li><a style={{backgroundColor:"#3b5995"}} href="#">in</a></li>
-                                    </ul>
-                                    <a href="#">
+                               <div className="social-menu">
+                            <ul>
+                                <li className="facebook"><a href="#"><i className="fa fa-facebook"></i></a></li>
+                                <li className="twitter"><a href="#"><i className="fa fa-twitter"></i></a></li>
+                                <li className="instagram"><a href="#"><i className="fa fa-instagram"></i></a></li>
+                                <li className="linkedin"><a href="#"><i className="fa fa-linkedin"></i></a></li>
+                                <li className="pinterest"><a href="#"><i className="fa fa-pinterest"></i></a></li>
+                            </ul>
+                        </div>
+                                    <a className="readmore" href="#">
                                         Read More
                                     </a>
                                  
@@ -134,21 +136,73 @@ export default class Landing extends Component {
                       contacts
                    </h3>
                     <div className="contacts-paper">
+                    <div className="contacts-paper-info">
+                        <h3>
+                            Contact us
+                        </h3>
+                        <div className="artist-circle artist-circle-2">
+                            <img src={elyes1} />
+                        </div>
+                            <div className="contacts-paper-info-item description-font">
+                                <span><i className="fa fa-phone"></i></span>
+                                <span>0800 123 121 </span>
+                            </div>
+                            <div className="contacts-paper-info-item description-font">
+                                <span>
+                                     <i className="fa fa-envelope-o"></i>
+                                </span>
+                                <span>
+                                    adsd@mail.com
+                                </span>
+                            </div>
+                            <div className="contacts-paper-info-item description-font">
+                                <span>
+                                    <i className="fa fa-home"></i>
+                                </span>
+                                <span>
+                                    Cite 3000 logement ilot 14 b11 Bouinana Blida Algerie
+
+                                </span>
+                            </div>
+                            <div className="social-menu">
+                            <ul>
+                                <li className="facebook"><a href="#"><i className="fa fa-facebook"></i></a></li>
+                                <li className="twitter"><a href="#"><i className="fa fa-twitter"></i></a></li>
+                                <li className="instagram"><a href="#"><i className="fa fa-instagram"></i></a></li>
+                                <li className="linkedin"><a href="#"><i className="fa fa-linkedin"></i></a></li>
+                                <li className="pinterest"><a href="#"><i className="fa fa-pinterest"></i></a></li>
+                            </ul>
+                        </div>
+                        </div>
+                       
                         <div className="contacts-paper-form">
-                            <div style={{margin:10}}>
+                        <h3>
+                            Contact form
+                        </h3>
+                        <div style={{margin:20}}>
                                 <TextField 
                                     id="outlined-basic" 
+                                    className="input-contact"
+                                    label="Full Name" 
+                                    variant="outlined" />
+                            </div>
+                            <div style={{margin:20}}>
+                                <TextField 
+                                    id="outlined-basic" 
+                                    className="input-contact"
                                     label="Email" 
                                     variant="outlined" />
                             </div>
-                            <div style={{margin:10}}>
+                            <div style={{margin:20}}>
                                 <TextField 
+                                    className="input-contact"
                                     id="outlined-basic" 
                                     label="Sujet" 
                                     variant="outlined" />
                             </div>
-                            <div style={{margin:10}}>
+                            <div style={{margin:20}}>
                                 <TextField
+                                    className="input-contact"
                                     id="outlined-multiline-static"
                                     label="Message"
                                     multiline
@@ -156,25 +210,15 @@ export default class Landing extends Component {
                                     variant="outlined"
                                 />
                             </div>
-                            <div style={{margin:10}}>
+                            <div style={{margin:20}}>
                                 <Button variant="outlined" primary>
                                         Envoyer
-                                        <Icon>
+                                        <Icon style={{marginLeft:5}}>
                                             send
                                         </Icon>
                                 </Button>
                             </div>
 
-                        </div>
-                        <div className="contacts-paper-info">
-                            <p>
-                                Excepteur eu ut sit in laboris minim mollit officia culpa. Culpa ipsum qui culpa ullamco aliqua. Eiusmod elit ea fugiat dolore ea magna anim cupidatat. Laboris nisi magna cillum labore irure laborum veniam et laboris nostrud.
-
-Commodo pariatur qui est anim et qui non reprehenderit et ullamco. Ad est et qui quis occaecat minim ea nulla. Pariatur occaecat dolore tempor elit. Irure amet mollit sunt irure et anim exercitation quis cupidatat ullamco.
-Ut qui amet esse nisi esse nisi duis. Id irure do sunt occaecat. Officia nisi exercitation ex fugiat aliqua tempor voluptate elit adipisicing proident consectetur laborum esse. Et veniam fugiat incididunt dolor nostrud ut pariatur sit deserunt commodo elit eiusmod. Nulla dolor enim commodo dolor adipisicing officia nulla ut. Do nisi pariatur amet duis est ea labore mollit eu mollit Lorem ipsum. Cillum fugiat aliqua in tempor do culpa ullamco voluptate quis proident fugiat sit quis.
-
-Nisi qui consequat cupidatat minim eiusmod. Anim eu qui ullamco non adipisicing occaecat reprehenderit veniam labore. Ullamco cillum dolor nulla deserunt. Non id qui id ea cillum.
-                            </p>
                         </div>
 
                     </div>
