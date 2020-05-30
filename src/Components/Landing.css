@@ -94,12 +94,12 @@
     font-weight: 500;
 } */
 
-.personal-card-1 .personal-details-1 .personal-content-1 a.readmore:hover{
+a.readmore:hover{
     background: #262626;
     color:#fff;
     transition: 0.7s;
 }
-.personal-card-1 .personal-details-1 .personal-content-1 a.readmore{
+a.readmore{
     display: inline-block;
     text-decoration: none;
     border: 2px solid #262626;
@@ -216,6 +216,13 @@
     border-radius: 50%;
     shape-outside: circle();
 }
+.artist-circle.artist-circle-3{
+    width:150px;
+    height:150px;
+    float: right;
+    border-radius: 50%;
+    shape-outside: circle();
+}
 .contacts-landing{
     margin-top: 70px;
     flex: 1;
@@ -314,7 +321,7 @@ label.Mui-focused {
     flex-direction: column;
 }
 .contacts-paper-info-item{
-    font-size: 18px;
+    font-size: 20px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -323,7 +330,7 @@ label.Mui-focused {
     /* width:250px; */
 }
 .contacts-paper-info-item span i {
-    font-size: 20px;
+    font-size: 22px;
     margin-right:15px;
 }
 

@@ -140,12 +140,12 @@ export default class Landing extends Component {
                         <h3>
                             Contact us
                         </h3>
-                        <div className="artist-circle artist-circle-2">
+                        <div className="artist-circle artist-circle-3">
                             <img src={elyes1} />
                         </div>
                             <div className="contacts-paper-info-item description-font">
                                 <span><i className="fa fa-phone"></i></span>
-                                <span>0800 123 121 </span>
+                                <span>0800 123 121 90</span>
                             </div>
                             <div className="contacts-paper-info-item description-font">
                                 <span>
@@ -211,12 +211,15 @@ export default class Landing extends Component {
                                 />
                             </div>
                             <div style={{margin:20}}>
-                                <Button variant="outlined" primary>
+                                {/* <Button variant="outlined" primary>
                                         Envoyer
                                         <Icon style={{marginLeft:5}}>
                                             send
                                         </Icon>
-                                </Button>
+                                </Button> */}
+                                <a className="readmore" href="#" style={{marginTop:10}}>
+                                        Envoyer un message
+                                    </a>
                             </div>
 
                         </div>
