@@ -138,7 +138,7 @@ export default class Landing extends Component {
                     <div className="contacts-paper">
                     <div className="contacts-paper-info">
                         <h3>
-                            Contact us
+                        Mes coordonnées
                         </h3>
                         <div className="artist-circle artist-circle-3">
                             <img src={elyes1} />
@@ -152,7 +152,7 @@ export default class Landing extends Component {
                                      <i className="fa fa-envelope-o"></i>
                                 </span>
                                 <span>
-                                    adsd@mail.com
+                                    Adsd@mail.com
                                 </span>
                             </div>
                             <div className="contacts-paper-info-item description-font">
@@ -161,7 +161,6 @@ export default class Landing extends Component {
                                 </span>
                                 <span>
                                     Cite 3000 logement ilot 14 b11 Bouinana Blida Algerie
-
                                 </span>
                             </div>
                             <div className="social-menu">
@@ -177,7 +176,7 @@ export default class Landing extends Component {
                        
                         <div className="contacts-paper-form">
                         <h3>
-                            Contact form
+                        M'envoyer un message
                         </h3>
                         <div style={{margin:20}}>
                                 <TextField 

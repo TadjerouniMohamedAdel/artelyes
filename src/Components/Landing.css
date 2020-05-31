@@ -319,6 +319,8 @@ label.Mui-focused {
     flex:1;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .contacts-paper-info-item{
     font-size: 20px;
@@ -327,8 +329,15 @@ label.Mui-focused {
     justify-content: center;
     align-items:center;
     padding:5px;
-    /* width:250px; */
+    width:250px;
 }
+.contacts-paper-info-item span:nth-child(1){
+    flex:0.2;
+}
+.contacts-paper-info-item span:nth-child(2){
+    flex:1;
+}
+
 .contacts-paper-info-item span i {
     font-size: 22px;
     margin-right:15px;
