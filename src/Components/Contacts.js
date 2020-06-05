@@ -4,6 +4,7 @@ import { elyes2, elyes1, demandeMariage, saintLouis2, peniche, pontNapoleon, aca
 import { Paper,Button,Icon, TextField } from '@material-ui/core'
 import Swiper from 'react-id-swiper';
 import {Link} from 'react-router-dom'
+import  './Contact.css'
 
 export default class Contacts extends Component {
     render() {

@@ -1,7 +1,7 @@
 .personal-container-1{
     width:80%;
     min-height:  600px;
-    /* background: rgb(248, 248, 248); */
+    background: #fff;
     box-shadow: 2px 2px 4px 2px #e2e2e2;
     /* box-shadow: ; */
     display:flex;
@@ -183,6 +183,7 @@ a.readmore{
     align-items: center;
 }
 .about-content{
+    background-color: #fff;
     box-shadow: 2px 2px 4px 2px #e2e2e2;
     flex: 1;
     display: flex;
@@ -234,6 +235,7 @@ a.readmore{
     
 }
 .contacts-paper{
+    background-color: #fff;
     box-shadow: 2px 2px 4px 2px #e2e2e2;
     width:100%;
     padding:20px;

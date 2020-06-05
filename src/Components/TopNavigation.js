@@ -25,7 +25,7 @@ const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
-    backgroundColor:"white",
+    backgroundColor:"transparent",
     // backgroundImage: `url(${artelyesLogo})`
   },
   appBar: {
@@ -103,7 +103,7 @@ export default function PersistentDrawerLeft() {
         className={clsx(classes.appBar, {
           [classes.appBarShift]: open,
         })}
-        style={{width:"100%",backgroundColor:"white",boxShadow:"none"}}
+        style={{width:"100%",backgroundColor:"transparent",boxShadow:"none"}}
       >
         <Toolbar style={{flex:1,flexDirection:"row",justifyContent:"space-between"}}>
           

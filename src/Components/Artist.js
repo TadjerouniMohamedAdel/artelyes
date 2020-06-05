@@ -13,7 +13,7 @@ export default class Artist extends Component {
                     Elyes Taib Lamine<br/>
                     <img src={underline}  style={{marginTop:-10}} width={350} height={50}/>
                 </h3>
-                <Paper>
+                <Paper style={{backgroundColor:'white'}}>
                 <section className="profile-section">
                     <div className="circle circle1">
                         <img src={elyes1} />
@@ -29,7 +29,7 @@ export default class Artist extends Component {
                 </section>
 
                 </Paper>
-                <Paper style={{marginTop:50}}>
+                <Paper style={{marginTop:50,backgroundColor:'white'}}>
                 <section className="profile-section">
                 <div className="circle circle1">
                         <img src={artist2} />
