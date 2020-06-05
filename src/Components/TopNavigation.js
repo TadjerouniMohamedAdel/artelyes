@@ -228,8 +228,14 @@ export default function PersistentDrawerLeft() {
         <Container maxWidth={false}>
             
             <Router />
-
-
+            <footer className="footer">
+                <div>
+                  <img src={artelyesLogo} className="logo-landing"/>
+                </div>
+                <div>
+                  2020 v0.0.1
+                </div>
+            </footer>
         </Container>
       </main>
     </div>

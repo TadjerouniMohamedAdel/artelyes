@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Paper, Typography, Button } from '@material-ui/core'
 import './Projects.css'
 import { academie, entreCopines, bastille, demandeMariage, peniche, pontNapoleon, grandOrsay, saintLouis1, saintLouis2, solitaire, notreDame, pontsAmours, promeneur, pecheur, fleursSous, juleVer, plateau, underline, top } from '../Images'
+import {Spring} from 'react-spring/renderprops'
 
 const data=[
     {title:"La demande en mariage",image:demandeMariage,description:"Sint qui sit id irure ipsum qui consectetur nostrud. Tempor aliquip aliquip in veniam commodo deserunt commodo id velit Lorem. Amet cupidatat duis excepteur sunt magna. Consectetur incididunt amet qui anim fugiat sint nulla. Aliqua eiusmod deserunt reprehenderit Lorem excepteur incididunt. Nisi sit reprehenderit ullamco Lorem eiusmod. Anim minim labore minim dolor eu officia."},
@@ -45,13 +46,18 @@ export default class Projects extends Component {
             </div>
                 <h3 className="projects-section-title">Les dernieres oeuvres
                 <br/>
-                <img src={underline} style={{marginTop:-10}} width={350} height={50}/>
+                <img  src={underline} style={{marginTop:-10}} width={350} height={50}/>
                 </h3>
                 <div className="projects-container">
                     {
                         data.map((item,index) =>{
                             return(
-                                <Paper key={index} className="project-item">
+                                <Spring
+                                    from={{ transform:'scale(0)' }}
+                                    delay={2000+index*600}
+                                    to={{ transform:'scale(1)' }}>
+                                    {props =>
+                                <Paper key={index} className="project-item" style={props}>
                                     <div>
                                         <img src={item.image} className="project-image"/>
                                     </div>
@@ -67,6 +73,8 @@ export default class Projects extends Component {
                                         </Button>
                                     </div>
                             </Paper>
+                                    }
+                            </Spring>
 
                         )
                         })
