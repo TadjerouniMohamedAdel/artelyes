@@ -57,11 +57,10 @@ const useStyles = makeStyles((theme) => ({
   },
   drawerHeader: {
     display: 'flex',
-    alignItems: 'center',
     padding: theme.spacing(0, 1),
     // necessary for content to be below app bar
     ...theme.mixins.toolbar,
-    justifyContent: 'flex-end',
+    justifyContent: 'space-between',
   },
   content: {
     flexGrow: 1,
@@ -162,7 +161,9 @@ export default function PersistentDrawerLeft() {
           paper: classes.drawerPaper,
         }}
       >
+        
         <div className={classes.drawerHeader}>
+          <img src={artelyesLogo} className="arteleyes-logo"/>
           <IconButton onClick={handleDrawerClose}>
             {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
           </IconButton>
@@ -219,13 +220,13 @@ export default function PersistentDrawerLeft() {
           </span>
         </div>
       </Drawer>
+      <Container maxWidth={false}>
       <main
         className={clsx(classes.content, {
           [classes.contentShift]: open,
         })}
       >
         <div className={classes.drawerHeader} />
-        <Container maxWidth={false}>
             
             <Router />
             <footer className="footer">
@@ -236,8 +237,8 @@ export default function PersistentDrawerLeft() {
                   2020 v0.0.1
                 </div>
             </footer>
-        </Container>
       </main>
+        </Container>
     </div>
   );
 }

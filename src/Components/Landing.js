@@ -51,11 +51,11 @@ export default class Landing extends Component {
                                     <img src={artelyesLogo} className="logo-landing"/>
                                 </div>
                                 <h2 className="artist-font">
-                                    Elyes Tayeb Lamine <br/>
-                                    <span className="description-font">
-                                        Artiste Paintre et Proffesseur
-                                    </span>
+                                    Elyes Tayeb Lamine 
                                 </h2>
+                                    <div className="description-font job">
+                                        Artiste Paintre et Proffesseur
+                                    </div>
                                <div className="social-menu">
                             <ul>
                                 <li className="facebook"><a href="#"><i className="fa fa-facebook"></i></a></li>
