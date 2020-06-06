@@ -3,6 +3,8 @@ import { Paper, Typography, Button } from '@material-ui/core'
 import './Projects.css'
 import { academie,orsay_de_loin, avenue_fleurs,plateau2,pont1,neige,vieux_pont,casbah1,casbah2,casbah3,casbah4,casbah5,entreCopines, bastille, demandeMariage, peniche, pontNapoleon, grandOrsay, saintLouis1, saintLouis2, solitaire, notreDame, pontsAmours, promeneur, pecheur, fleursSous, juleVer, plateau, underline, top, alger1,alger2 } from '../Images'
 import {Spring} from 'react-spring/renderprops'
+import Lightbox from 'react-image-lightbox';
+import 'react-image-lightbox/style.css'; // This only needs to be imported once in your app
 
 const data=[
     {title:"La demande en mariage",image:demandeMariage,description:"Sint qui sit id irure ipsum qui consectetur nostrud. Tempor aliquip aliquip in veniam commodo deserunt commodo id velit Lorem. Amet cupidatat duis excepteur sunt magna. Consectetur incididunt amet qui anim fugiat sint nulla. Aliqua eiusmod deserunt reprehenderit Lorem excepteur incididunt. Nisi sit reprehenderit ullamco Lorem eiusmod. Anim minim labore minim dolor eu officia."},
@@ -44,9 +46,39 @@ const data=[
 
 
 export default class Projects extends Component {
+
+    constructor(props){
+        super(props);
+        this.state = {
+            image: null,
+            isOpen: false,
+          };
+    }
+
+    zommImage = (item)=>{
+        console.log(item)
+        this.setState({
+            isOpen:true,
+            image:item.image,
+            title:item.title,
+            caption:item.description
+        })
+    }
+
     render() {
         return (
+            
             <div style={{flex:1}}>
+                 {this.state.isOpen && (
+          <Lightbox
+            mainSrc={this.state.image}
+            // nextSrc={images[(photoIndex + 1) % images.length]}
+            // prevSrc={images[(photoIndex + images.length - 1) % images.length]}
+            onCloseRequest={() => this.setState({ isOpen: false })}
+            imageTitle={this.state.title}
+            imageCaption={this.state.caption}
+          />
+        )}
                 <div style={{flex:1,textAlign:"center",marginTop:20}}>
               <img src={top} style={{textAlign:"center"}} width={1200} height={150}/>
             </div>
@@ -74,7 +106,7 @@ export default class Projects extends Component {
                                         {item.description.substring(0,50)}...
                                     </p>
                                     <div>
-                                        <Button variant="outlined" style={{fontFamily:"Source Sans Pro, Sans-Serif",fontWeight:"600",fontSize:14}}>
+                                        <Button onClick={()=>this.zommImage(item)} variant="outlined" style={{fontFamily:"Source Sans Pro, Sans-Serif",fontWeight:"600",fontSize:14}}>
                                             Agrendir <i className="fa fa-external-link zomm-icon"></i>
                                         </Button>
                                     </div>
