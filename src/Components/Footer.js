@@ -30,12 +30,20 @@ export default class Footer extends Component {
                                        Full Stack web & mobile developer
                                     </span>
                             </div>
-                        <ul className="social-dev">
+                        {/* <ul className="social-dev">
                             <li><a href="#"><i className="fa fa-linkedin"></i></a></li>
                             <li><a href="#"><i className="fa fa-facebook"></i></a></li>
                             <li><a href="#"><i className="fa fa-skype"></i></a></li>
                             <li><a href="#"><i className="fa fa-github"></i></a></li>
-                        </ul>
+                        </ul> */}
+                        <div className="social-dev">
+                            <ul>
+                                <li className="linkedin"><a href="#"><i className="fa fa-linkedin"></i></a></li>
+                                <li className="github"><a href="#"><i className="fa fa-github"></i></a></li>
+                                <li className="facebook"><a href="#"><i className="fa fa-facebook"></i></a></li>
+                                <li className="skype"><a href="#"><i className="fa fa-skype"></i></a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 

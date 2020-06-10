@@ -158,3 +158,47 @@ main{
     flex-direction: column;
     justify-content: center;
 }
+.social-dev ul{
+    /* background-color: #d8d8d8; */
+    display: flex;
+}
+.social-dev ul li{
+    list-style: none;
+    margin:0 5px;
+}
+.social-dev ul li .fa{
+    font-size:16px;
+    /* line-height: 60px; */
+    transition: .6s;
+    color:#000;
+}
+.social-dev ul li:hover .fa{
+    color:#fff;
+}
+.social-dev ul li.facebook a:hover{
+    background-color: #3b5999;
+}
+.social-dev ul li.skype a:hover{
+    background-color: #00AFF0;
+}
+
+.social-dev ul li.linkedin a:hover{
+    background-color: #0077B5;
+}
+.social-dev ul li.github a:hover{
+    background-color: rgb(71, 71, 71);
+}
+.social-dev ul li a{
+    position: relative;
+    display: block;
+    width:30px;
+    height:30px;
+    border-radius:50px;
+    background-color: #fff;
+    text-align: center;
+    transition:.6s;
+    box-shadow: 0 2px 4px rgba(255,255,255,0.5);    
+}
+.social-dev ul li a:hover{
+    transform:translate(0,-10px)
+}
