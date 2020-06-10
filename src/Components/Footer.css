@@ -1,0 +1,116 @@
+.footer{
+    height: 200px;
+    background-color:#000;
+    margin-top:30px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.footer-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width:350px;
+    height: 100%;
+}
+
+.logo-footer{
+    width:150px;
+    height:200px;
+    display: block;
+}
+.artist-footer-circle{
+    position: relative;
+    overflow: hidden
+    ;
+}
+.artist-footer-circle img{
+    position: absolute;
+    display: block;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover
+}
+.artist-footer-circle.artist-footer-circle-2{
+    width:125px;
+    height:120px;
+    border-radius: 50%;
+    shape-outside: circle();
+}
+.social-dev{
+    list-style: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-left: -40px;
+}
+.social-dev li{
+    margin-left: 15px;
+}
+.social-dev li a{
+    font-size: 20px;
+    color: white;
+}
+.dev{
+    font-size:16px;
+    color: #777;
+    font-weight:500;
+}
+.dev-name{
+    display: block;
+    margin-bottom: 2px;
+}
+.dev-content{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.social-dev ul{
+    /* background-color: #d8d8d8; */
+    display: flex;
+}
+.social-dev ul li{
+    list-style: none;
+    margin:0 5px;
+}
+.social-dev ul li .fa{
+    font-size:16px;
+    /* line-height: 60px; */
+    transition: .6s;
+    color:#000;
+}
+.social-dev ul li:hover .fa{
+    color:#fff;
+}
+.social-dev ul li.facebook a:hover{
+    background-color: #3b5999;
+}
+.social-dev ul li.skype a:hover{
+    background-color: #00AFF0;
+}
+
+.social-dev ul li.linkedin a:hover{
+    background-color: #0077B5;
+}
+.social-dev ul li.github a:hover{
+    background-color: rgb(71, 71, 71);
+}
+.social-dev ul li a{
+    position: relative;
+    display: block;
+    width:30px;
+    height:30px;
+    border-radius:50px;
+    background-color: #fff;
+    text-align: center;
+    transition:.6s;
+    box-shadow: 0 2px 4px rgba(255,255,255,0.5);    
+}
+.social-dev ul li a:hover{
+    transform:translate(0,-10px)
+}

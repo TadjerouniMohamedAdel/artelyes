@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { artelyesLogo, adel } from '../Images'
-
+import  './Footer.css'
 export default class Footer extends Component {
     render() {
         return (
@@ -9,10 +9,10 @@ export default class Footer extends Component {
                     <div className="logo-footer-section"> 
                         <img src={artelyesLogo} className="logo-footer"/>
                     </div>
-                    <div>
+                    <div className="dev-content">
                         <h3 className="artist-font">A props du site :</h3>
                         <p className="description-font" style={{color:'#777'}}>
-                            Ce site est dedie ou  ouevres d'art de Mr Elyes Taib Lamine
+                            Artelyes est  site  dedie a la presentation et la publication des ouevres d'art de Mr Elyes Taib Lamine
                         </p>
                     </div>
                 </div>
