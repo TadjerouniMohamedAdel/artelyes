@@ -90,14 +90,15 @@ export default class Projects extends Component {
                 <div className="projects-container">
                     {
                         data.map((item,index) =>{
+                            
                             return(
-                                <Spring
-                                    key={index}
-                                    from={{ transform:'scale(0)' }}
-                                    delay={2000+index*600}
-                                    to={{ transform:'scale(1)' }}>
-                                    {props =>
-                                <Paper key={index} className="project-item" style={props}>
+                                // <Spring
+                                //     key={index}
+                                //     from={{ transform:'scale(0)' }}
+                                //     // delay={2000+index*600}
+                                //     to={{ transform:'scale(1)' }}>
+                                //     {props =>
+                                <Paper key={index} className="project-item" >
                                     <div>
                                         <img src={item.image} className="project-image"/>
                                     </div>
@@ -113,8 +114,8 @@ export default class Projects extends Component {
                                         </Button>
                                     </div>
                             </Paper>
-                                    }
-                            </Spring>
+                            //         }
+                            // </Spring>
 
                         )
                         })
