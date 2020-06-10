@@ -19,6 +19,7 @@ import Router from './Router';
 import {Tab,Tabs, Hidden} from '@material-ui/core'
 import {Link} from 'react-router-dom'
 import { artelyesLogo, top } from '../Images';
+import Footer from './Footer';
 
 const drawerWidth = 240;
 
@@ -64,7 +65,7 @@ const useStyles = makeStyles((theme) => ({
   },
   content: {
     flexGrow: 1,
-    padding: theme.spacing(3),
+    // padding: theme.spacing(3),
     transition: theme.transitions.create('margin', {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
@@ -220,7 +221,6 @@ export default function PersistentDrawerLeft() {
           </span>
         </div>
       </Drawer>
-      <Container maxWidth={false}>
       <main
         className={clsx(classes.content, {
           [classes.contentShift]: open,
@@ -229,16 +229,8 @@ export default function PersistentDrawerLeft() {
         <div className={classes.drawerHeader} />
             
             <Router />
-            <footer className="footer">
-                <div>
-                  <img src={artelyesLogo} className="logo-landing"/>
-                </div>
-                <div>
-                  2020 v0.0.1
-                </div>
-            </footer>
+            <Footer />
       </main>
-        </Container>
     </div>
   );
 }

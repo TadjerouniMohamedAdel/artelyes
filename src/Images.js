@@ -41,3 +41,5 @@ export const artelyesLogo = require("./Images/artelyes_logo.png")
 export const underline = require("./Images/underline.png")
 export const top = require("./Images/top.png")
 
+export const adel = require("./Images/adel.jpg")
+
