@@ -1,4 +1,5 @@
 .projects-section-title{
+    /* padding:40px; */
     font-size: 24px;
     font-weight: 700;
     font-style: italic;
@@ -19,7 +20,7 @@
     /* justify-content: center; */
     align-items: center;
     width:280px;
-    height: 400px;
+    height: 470px;
     padding:20px;
     padding-top: 0px;
     margin:10px;
@@ -29,6 +30,7 @@
     margin-bottom: 2px;
     font-size: 18px;
     font-weight: 600;
+    height: 300px;
     text-align: center;
     font-style: italic;
     font-family: 'Playfair Display', serif;
@@ -49,4 +51,53 @@
 }
 .ReactModal__Overlay.ReactModal__Overlay--after-open{
     z-index: 2000 !important;
+}
+.share-menu ul{
+    display: flex;
+    margin-left:-30px;
+    
+}
+.share-menu ul li{
+    list-style: none;
+    margin:0 10px;
+}
+.share-menu ul li .fa{
+    font-size:18px;
+    line-height: 30px;
+    transition: .6s;
+    color:#fff;
+}
+.share-menu ul li:hover .fa{
+    color:#fff;
+}
+.share-menu ul li.facebook a:hover{
+    background-color: #3b5999;
+}
+.share-menu ul li.twitter a:hover{
+    background-color: #55acee;
+}
+.share-menu ul li.instagram a:hover{
+    background-color: #e4405f;
+}
+.share-menu ul li.linkedin a:hover{
+    background-color: #0077B5;
+}
+.share-menu ul li.pinterest a:hover{
+    background-color: #bd081c;
+}
+
+.share-menu ul li a{
+    position: relative;
+    display: block;
+    width:30px;
+    height:30px;
+    border-radius:50px;
+    background-color: #000;
+    text-align: center;
+    transition:.6s;
+    box-shadow:0 5px 4px rgba(0,0,0,0.5)
+    
+}
+.share-menu ul li a:hover{
+    transform:translate(0,-10px)
 }
