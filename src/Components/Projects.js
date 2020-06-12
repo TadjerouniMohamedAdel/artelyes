@@ -5,6 +5,7 @@ import { academie,orsay_de_loin, avenue_fleurs,plateau2,pont1,neige,vieux_pont,c
 import {Spring} from 'react-spring/renderprops'
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css'; // This only needs to be imported once in your app
+import HeaderDeco from './HeaderDeco'
 
 const data=[
     {title:"La demande en mariage",image:demandeMariage,description:"Sint qui sit id irure ipsum qui consectetur nostrud. "},
@@ -84,9 +85,7 @@ export default class Projects extends Component {
             imageCaption={this.state.caption}
           />
         )}
-                <div style={{flex:1,textAlign:"center",marginTop:20}}>
-              <img src={top} style={{textAlign:"center"}} width={1200} height={150}/>
-            </div>
+                <HeaderDeco/>
                 <h3 className="projects-section-title">Les dernieres oeuvres
                 <br/>
                 <img  src={underline} style={{marginTop:-10}} width={350} height={50}/>

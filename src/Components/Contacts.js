@@ -5,14 +5,13 @@ import { Paper,Button,Icon, TextField } from '@material-ui/core'
 import Swiper from 'react-id-swiper';
 import {Link} from 'react-router-dom'
 import  './Contact.css'
+import HeaderDeco from './HeaderDeco';
 
 export default class Contacts extends Component {
     render() {
         return (
             <div>
-                <div style={{flex:1,textAlign:"center",marginTop:20}}>
-              <img src={top} style={{textAlign:"center"}} width={1200} height={150}/>
-            </div>
+                <HeaderDeco />
                  <h3 className="profile-section-title">
                     contacts<br/>
                     <img src={underline}  style={{marginTop:-10}} width={350} height={50}/>

@@ -1,0 +1,22 @@
+.header-deco{
+    width: 1200px;
+    height: 150px;
+}
+@media(max-width:1181px){
+    .header-deco{
+        width: 1000px;
+        height: 125px;
+    }
+}
+@media(max-width:1015px){
+    .header-deco{
+        width: 800px;
+        height: 100px;
+    }
+}
+@media(max-width:830px){
+    .header-deco{
+        width: 600px;
+        height: 75px;
+    }
+}

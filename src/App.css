@@ -79,4 +79,8 @@
 main{
     background-color: #fcfcfc;
 }
-
+@media(max-width:900px){
+    .navbar-tabs{
+        display: none;
+    }
+}

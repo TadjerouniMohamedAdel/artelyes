@@ -124,10 +124,9 @@ export default function PersistentDrawerLeft() {
             </div>
 
           </div>
-          <Hidden only={"xs"}>
+          
         <div
             className="navbar-tabs"
-           
         >
           <span className="artist-font navbar-item">
               <Link  className={"navbar-item-link"+(linkActive == 0 ? " active-link" : "")} onClick={() => {handleDrawerClose();setLink(0)}} to="/">
@@ -150,7 +149,6 @@ export default function PersistentDrawerLeft() {
               </Link>
           </span>
         </div>
-        </Hidden>
         </Toolbar>
       </AppBar>
       <Drawer
