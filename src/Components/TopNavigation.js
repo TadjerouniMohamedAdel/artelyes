@@ -169,32 +169,7 @@ export default function PersistentDrawerLeft() {
             {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
           </IconButton>
         </div>
-        {/* <List>
-         
-         <Link  onClick={() => handleDrawerClose()} to="/" style={{textDecoration:"none",color:"black"}}>
-             <ListItem button key={"home"}>
-             <ListItemText primary={"Home"} />
-             </ListItem>
-         </Link>
-         <Link  onClick={() => handleDrawerClose()} to="/artist" style={{textDecoration:"none",color:"black"}}>
-             <ListItem button key={"Artist"}>
-             <ListItemText primary={"Artist"} />
-             </ListItem>
-         </Link>
-         <Link  onClick={() => handleDrawerClose()} to="/projects" style={{textDecoration:"none",color:"black"}}>
-             <ListItem button key={"Oeuvres"}>
-             <ListItemText primary={"Oeuvres"} />
-             </ListItem>
-         </Link>
-         <Link  onClick={() => handleDrawerClose()} to="/contacts" style={{textDecoration:"none",color:"black"}}>
-             <ListItem button key={"Contacts"}>
-             <ListItemText primary={"Contacts"} />
-             </ListItem>
-         </Link>
-
         
-         
-     </List> */}
      <div
             className="navbar-tabs-drawer"
            
