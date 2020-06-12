@@ -6,16 +6,14 @@ import Swiper from 'react-id-swiper';
 import {Link} from 'react-router-dom'
 import  './Contact.css'
 import HeaderDeco from './HeaderDeco';
+import TitleSection from './TitleSection';
 
 export default class Contacts extends Component {
     render() {
         return (
             <div>
                 <HeaderDeco />
-                 <h3 className="profile-section-title">
-                    contacts<br/>
-                    <img src={underline}  style={{marginTop:-10}} width={350} height={50}/>
-                </h3>
+                <TitleSection title="Contacts" />
                 <div className="contacts-landing">
                     <h3>
                       contacts

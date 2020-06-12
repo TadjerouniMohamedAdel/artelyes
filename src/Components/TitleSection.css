@@ -1,0 +1,13 @@
+.title-section{
+    /* padding:40px; */
+    font-size: 24px;
+    font-weight: 700;
+    font-style: italic;
+    font-family: 'Playfair Display', serif;
+    color: #131313;
+    text-align: center;
+}
+.img-underline{
+    width: 350px;
+    height: 50px;  
+}

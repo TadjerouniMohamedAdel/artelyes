@@ -3,15 +3,13 @@ import './Artist.css'
 import { elyes1, artist1, underline, artist2, top } from '../Images'
 import { Paper } from '@material-ui/core'
 import HeaderDeco from './HeaderDeco'
+import TitleSection from './TitleSection'
 export default class Artist extends Component {
     render() {
         return (
             <div >
                <HeaderDeco />
-                <h3 className="profile-section-title">
-                    Elyes Taib Lamine<br/>
-                    <img src={underline}  style={{marginTop:-10}} width={350} height={50}/>
-                </h3>
+                <TitleSection title="Elyes Taib Lamine" />
                 <Paper style={{backgroundColor:'white'}}>
                 <section className="profile-section">
                     <div className="circle circle1">

@@ -6,6 +6,7 @@ import {Spring} from 'react-spring/renderprops'
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css'; // This only needs to be imported once in your app
 import HeaderDeco from './HeaderDeco'
+import TitleSection from './TitleSection'
 
 const data=[
     {title:"La demande en mariage",image:demandeMariage,description:"Sint qui sit id irure ipsum qui consectetur nostrud. "},
@@ -86,10 +87,7 @@ export default class Projects extends Component {
           />
         )}
                 <HeaderDeco/>
-                <h3 className="projects-section-title">Les dernieres oeuvres
-                <br/>
-                <img  src={underline} style={{marginTop:-10}} width={350} height={50}/>
-                </h3>
+                <TitleSection title="Les dernieres oeuvres" />
                 <div className="projects-container">
                     {
                         data.map((item,index) =>{
