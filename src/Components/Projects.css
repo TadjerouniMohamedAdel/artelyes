@@ -101,3 +101,8 @@
 .share-menu ul li a:hover{
     transform:translate(0,-10px)
 }
+@media(max-width:500px){
+    .project-title{
+        font-size: 17px;
+    }
+}

@@ -40,7 +40,8 @@
 }
 @media(max-width:400px){
     .header-deco{
-        width: 350px;
+        width: 320px;
         height:61px;
     }
 }
+

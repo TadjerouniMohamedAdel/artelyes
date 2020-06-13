@@ -124,5 +124,9 @@
         align-items:center;
         justify-content: space-between;
     }
-    
+    .footer-section{
+        
+        width:300px;
+        height: auto;
+    }
 }

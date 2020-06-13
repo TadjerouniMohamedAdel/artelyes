@@ -13,12 +13,10 @@
 }
 @media(max-width:500px){
     .img-underline{
-        width: 270px;
-        height:36px;
+        width: 250px;
+        height:33px;
     }
     .title-section{
-        /* padding:40px; */
-        font-size:20px;
-        /* font-weight: 700; */
+        font-size:18px;
     }
 }
