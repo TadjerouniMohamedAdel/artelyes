@@ -2,6 +2,7 @@
     /* background-color: #d8d8d8; */
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
 }
 .social-menu ul li{
@@ -47,4 +48,100 @@
 }
 .social-menu ul li a:hover{
     transform:translate(0,-10px)
+}
+@media(max-width:1274px){
+    .social-menu ul li{
+        list-style: none;
+        margin:0 10px;
+    }
+    .social-menu ul li .fa{
+        font-size:25px;
+        line-height: 45px;
+        transition: .6s;
+        color:#fff;
+    }
+    .social-menu ul li a{
+        position: relative;
+        display: block;
+        width:45px;
+        height:45px;
+        border-radius:50px;
+        background-color: #000;
+        text-align: center;
+        transition:.6s;
+        box-shadow:0 5px 4px rgba(0,0,0,0.5)
+        
+    }
+}
+@media(max-width:506px){
+    .social-menu ul li{
+        list-style: none;
+        margin:0 8px;
+    }
+    .social-menu ul li .fa{
+        font-size:20px;
+        line-height: 35px;
+        transition: .6s;
+        color:#fff;
+    }
+    .social-menu ul li a{
+        position: relative;
+        display: block;
+        width:35px;
+        height:35px;
+        border-radius:50px;
+        background-color: #000;
+        text-align: center;
+        transition:.6s;
+        box-shadow:0 5px 4px rgba(0,0,0,0.5)
+        
+    }
+}
+@media(max-width:443px){
+    .social-menu ul li{
+        list-style: none;
+        margin:0 6px;
+    }
+    .social-menu ul li .fa{
+        font-size:20px;
+        line-height: 33px;
+        transition: .6s;
+        color:#fff;
+    }
+    .social-menu ul li a{
+        position: relative;
+        display: block;
+        width:33px;
+        height:33px;
+        border-radius:50px;
+        background-color: #000;
+        text-align: center;
+        transition:.6s;
+        box-shadow:0 5px 4px rgba(0,0,0,0.5)
+        
+    }
+}
+@media(max-width:350px){
+    .social-menu ul li{
+        list-style: none;
+        margin:0 4px;
+    }
+    .social-menu ul li .fa{
+        font-size:16px;
+        line-height: 25px;
+        transition: .6s;
+        color:#fff;
+    }
+    .social-menu ul li a{
+        position: relative;
+        display: block;
+        width:25px;
+        height:25px;
+        border-radius:50px;
+        background-color: #000;
+        text-align: center;
+        transition:.6s;
+        box-shadow:0 5px 4px rgba(0,0,0,0.5)
+        
+    }
 }

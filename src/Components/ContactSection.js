@@ -34,7 +34,9 @@ export default class ContactSection extends Component {
                                     Cite 3000 logement ilot 14 b11 Bouinana Blida Algerie
                                 </span>
                             </div>
-                            <SocialMenuArtist />
+                            <div className="contacts-paper-social-menu">
+                                <SocialMenuArtist />
+                            </div>
                         </div>
                        
                         <div className="contacts-paper-form">
@@ -73,12 +75,6 @@ export default class ContactSection extends Component {
                                 />
                             </div>
                             <div>
-                                {/* <Button variant="outlined" primary>
-                                        Envoyer
-                                        <Icon style={{marginLeft:5}}>
-                                            send
-                                        </Icon>
-                                </Button> */}
                                 <a className="readmore" href="#" style={{marginTop:10}}>
                                         Envoyer un message
                                     </a>
