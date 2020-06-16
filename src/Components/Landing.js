@@ -7,6 +7,7 @@ import {Link} from 'react-router-dom'
 
 import 'swiper/css/swiper.css'
 import ContactSection from './ContactSection';
+import SocialMenuArtist from './SocialMenuArtist';
 const data=[
     {title:"La demande en mariage",image:demandeMariage,description:"Sint qui sit id irure ipsum qui consectetur nostrud. Tempor aliquip aliquip in veniam commodo deserunt commodo id velit Lorem. Amet cupidatat duis excepteur sunt magna. Consectetur incididunt amet qui anim fugiat sint nulla. Aliqua eiusmod deserunt reprehenderit Lorem excepteur incididunt. Nisi sit reprehenderit ullamco Lorem eiusmod. Anim minim labore minim dolor eu officia."},
     {title:"Saint-Louis-en-île",image:saintLouis2,description:"Sint qui sit id irure ipsum qui consectetur nostrud. Tempor aliquip aliquip in veniam commodo deserunt commodo id velit Lorem. Amet cupidatat duis excepteur sunt magna. Consectetur incididunt amet qui anim fugiat sint nulla. Aliqua eiusmod deserunt reprehenderit Lorem excepteur incididunt. Nisi sit reprehenderit ullamco Lorem eiusmod. Anim minim labore minim dolor eu officia."},
@@ -57,15 +58,7 @@ export default class Landing extends Component {
                                     <div className="description-font job">
                                         Artiste Paintre et Proffesseur
                                     </div>
-                               <div className="social-menu">
-                            <ul>
-                                <li className="facebook"><a href="#"><i className="fa fa-facebook"></i></a></li>
-                                <li className="twitter"><a href="#"><i className="fa fa-twitter"></i></a></li>
-                                <li className="instagram"><a href="#"><i className="fa fa-instagram"></i></a></li>
-                                <li className="linkedin"><a href="#"><i className="fa fa-linkedin"></i></a></li>
-                                <li className="pinterest"><a href="#"><i className="fa fa-pinterest"></i></a></li>
-                            </ul>
-                        </div>
+                                    <SocialMenuArtist />
                                     <a className="readmore" href="#">
                                         Read More
                                     </a>
