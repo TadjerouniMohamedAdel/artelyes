@@ -8,6 +8,7 @@ import {Link} from 'react-router-dom'
 import 'swiper/css/swiper.css'
 import ContactSection from './ContactSection';
 import SocialMenuArtist from './SocialMenuArtist';
+import PersonalCard from './PersonalCard';
 const data=[
     {title:"La demande en mariage",image:demandeMariage,description:"Sint qui sit id irure ipsum qui consectetur nostrud. Tempor aliquip aliquip in veniam commodo deserunt commodo id velit Lorem. Amet cupidatat duis excepteur sunt magna. Consectetur incididunt amet qui anim fugiat sint nulla. Aliqua eiusmod deserunt reprehenderit Lorem excepteur incididunt. Nisi sit reprehenderit ullamco Lorem eiusmod. Anim minim labore minim dolor eu officia."},
     {title:"Saint-Louis-en-île",image:saintLouis2,description:"Sint qui sit id irure ipsum qui consectetur nostrud. Tempor aliquip aliquip in veniam commodo deserunt commodo id velit Lorem. Amet cupidatat duis excepteur sunt magna. Consectetur incididunt amet qui anim fugiat sint nulla. Aliqua eiusmod deserunt reprehenderit Lorem excepteur incididunt. Nisi sit reprehenderit ullamco Lorem eiusmod. Anim minim labore minim dolor eu officia."},
@@ -42,31 +43,7 @@ export default class Landing extends Component {
         return (
             <div className="landing-container" style={{flex:1,flexDirection:"column",justifyContent:"center",alignItems:"center"}}>
 
-               <div className="personal-container-1">
-                   <div className="personal-card-1">
-                       <div className="imgBx">
-                           <img src={elyes1} />
-                        </div> 
-                        <div className="personal-details-1">
-                            <div className="personal-content-1">
-                                <div>
-                                    <img src={artelyesLogo} className="logo-landing"/>
-                                </div>
-                                <h2 className="artist-font">
-                                    Elyes Tayeb Lamine 
-                                </h2>
-                                    <div className="description-font job">
-                                        Artiste Paintre et Proffesseur
-                                    </div>
-                                    <SocialMenuArtist />
-                                    <a className="readmore" href="#">
-                                        Read More
-                                    </a>
-                                 
-                            </div>
-                        </div>
-                   </div>
-               </div>
+               <PersonalCard />
                <div className="last-projects">
                    <h3>
                        Dernieres Ouvrres
