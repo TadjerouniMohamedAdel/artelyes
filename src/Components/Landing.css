@@ -20,57 +20,7 @@ a.readmore{
     justify-content: center;
     padding: 40px;
 }
-.last-projects{
-    margin-top: 70px;
-    flex: 1;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.last-projects h3{
-    text-align: center;
-    font-size: 20px;
-}
-.btn-landing{
-    color:black;
-    text-decoration: none;
-}
-.last-projects .project-item-swip{
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
-    width:280px;
-    height: 330px;
-    padding:20px;
-    padding-top: 0px;
-    margin:10px;
-    overflow: hidden;
-}
-.last-projects .project-title-swip{
-    margin-bottom: 2px;
-    font-size: 18px;
-    font-weight: 600;
-    text-align: center;
-    font-style: italic;
-    font-family: 'Playfair Display', serif;
-    color: #131313;
-}
 
-.last-projects .project-description-swip{
-    font-size:15px;
-    text-align:center;
-}
-.last-projects .project-image-swip{
-    width: 320px;
-    height: 285px;
-}
-
-.last-projects .link-projects{
-    font-size: 16px;
-}
 .about-artist h3{
     text-align: center;
     font-size: 20px;
