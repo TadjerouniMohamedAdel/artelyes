@@ -82,11 +82,11 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function PersistentDrawerLeft() {
+export default function PersistentDrawerLeft({active}) {
   const classes = useStyles();
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
-  const [linkActive,setLink] = React.useState(0)
+  const [linkActive,setLink] = React.useState(active)
 
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -129,22 +129,22 @@ export default function PersistentDrawerLeft() {
         <div
             className="navbar-tabs"
         >
-          <span className="artist-font navbar-item">
+          <span className="artist-font navbar-item" style={{flex:1}}>
               <Link  className={"navbar-item-link"+(linkActive == 0 ? " active-link" : "")} onClick={() => {handleDrawerClose();setLink(0)}} to="/">
                   Acceuil
               </Link>
           </span> 
-          <span className="artist-font navbar-item">
+          <span className="artist-font navbar-item" style={{flex:1}}>
               <Link  className={"navbar-item-link"+(linkActive == 1 ? " active-link" : "")} onClick={() => {handleDrawerClose();setLink(1)}} to="/artist">
                   Artiste
               </Link>
           </span>
-          <span className="artist-font navbar-item">
+          <span className="artist-font navbar-item" style={{flex:1}}>
               <Link  className={"navbar-item-link"+(linkActive == 2 ? " active-link" : "")} onClick={() => {handleDrawerClose();setLink(2)}} to="/projects">
                   Oeuvres
               </Link>
           </span>
-          <span className="artist-font navbar-item">
+          <span className="artist-font navbar-item" style={{flex:1}}>
               <Link  className={"navbar-item-link"+(linkActive == 3 ? " active-link" : "")} onClick={() => {handleDrawerClose();setLink(3)}} to="/contacts">
                   Contact
               </Link>
@@ -174,22 +174,22 @@ export default function PersistentDrawerLeft() {
            
         >
           <span className="artist-font navbar-item">
-              <Link  className="navbar-item-link" onClick={() => handleDrawerClose()} to="/">
+              <Link  className={"navbar-item-link"+(linkActive == 0 ? " active-link" : "")} onClick={() => {handleDrawerClose();setLink(0)}} to="/">
                   Acceuil
               </Link>
           </span> 
           <span className="artist-font navbar-item">
-              <Link  className="navbar-item-link" onClick={() => handleDrawerClose()} to="/artist">
+              <Link  className={"navbar-item-link"+(linkActive == 1 ? " active-link" : "")} onClick={() => {handleDrawerClose();setLink(1)}} to="/artist">
                   Artiste
               </Link>
           </span>
           <span className="artist-font navbar-item">
-              <Link  className="navbar-item-link" onClick={() => handleDrawerClose()} to="/projects">
+              <Link  className={"navbar-item-link"+(linkActive == 2 ? " active-link" : "")} onClick={() => {handleDrawerClose();setLink(2)}} to="/projects">
                   Oeuvres
               </Link>
           </span>
           <span className="artist-font navbar-item">
-              <Link  className="navbar-item-link" onClick={() => handleDrawerClose()} to="/contacts">
+              <Link  className={"navbar-item-link"+(linkActive == 3 ? " active-link" : "")} onClick={() => {handleDrawerClose();setLink(3)}} to="/contacts">
                   Contact
               </Link>
           </span>
