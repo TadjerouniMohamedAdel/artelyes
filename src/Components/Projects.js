@@ -51,6 +51,7 @@ export default class Projects extends Component {
 
     constructor(props){
         super(props);
+        this.props.updatelinkActive(2)
         this.state = {
             image: null,
             isOpen: false,
@@ -87,7 +88,7 @@ export default class Projects extends Component {
           />
         )}
                 <HeaderDeco/>
-                <TitleSection title="Les dernieres oeuvres" />
+                <TitleSection title="les Dernières œuvres" />
                 <div className="projects-container">
                     {
                         data.map((item,index) =>{

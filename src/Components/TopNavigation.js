@@ -202,7 +202,7 @@ export default function PersistentDrawerLeft({active}) {
       >
         <div className={classes.drawerHeader} />
             
-            <Router />
+            <Router updatelinkActive={setLink}/>
             <Footer />
       </main>
     </div>

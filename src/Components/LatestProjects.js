@@ -42,7 +42,7 @@ export default function LatestProjects() {
     return (
         <div className="last-projects">
                    <h3>
-                       Dernieres Ouvrres
+                   les Dernières œuvres
                    </h3>
                    <div className="swip-container">
                    <Swiper {...params}>
@@ -66,7 +66,7 @@ export default function LatestProjects() {
                    </div>
                     <div className="link-projects artist-font">
                         <Link  to="/projects" style={{color:"#d4af37",fontSize:17}}>
-                           voir tous les Oeuvres
+                        Voir tous les oeuvres
                         </Link>
                     </div>
                </div>

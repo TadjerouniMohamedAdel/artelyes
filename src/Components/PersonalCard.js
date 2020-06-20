@@ -1,6 +1,7 @@
 import React from 'react'
 import { artelyesLogo, elyes1 } from '../Images'
 import SocialMenuArtist from './SocialMenuArtist'
+import { Link } from 'react-router-dom'
 import './PersonalCard.css'
 export default function PersonalCard() {
     return (
@@ -26,9 +27,11 @@ export default function PersonalCard() {
                                         Artiste Paintre et Proffesseur
                                     </div>
                                     <SocialMenuArtist />
-                                    <a className="readmore" href="#">
-                                        Read More
-                                    </a>
+                                    <Link to="/artist">
+                                        <a className="readmore" href="#">
+                                            Apprendre Plus
+                                        </a>
+                                    </Link>
                                  
                             </div>
                         </div>

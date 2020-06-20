@@ -7,7 +7,7 @@ import Projects from './Projects'
 import {useSpring, useTransition,animated,config} from 'react-spring'
 
 
- const Router = function () {
+ const Router = function ({ updatelinkActive}) {
     const {location} = useContext(__RouterContext)
     const transition = useTransition(location,location => location.pathname,{
         from:{
@@ -28,16 +28,16 @@ import {useSpring, useTransition,animated,config} from 'react-spring'
                 <animated.div key={key} style={props}>
                      <Switch location={item}>
                 <Route path="/artist">
-                    <Artist />
+                    <Artist updatelinkActive={updatelinkActive}/>
                 </Route>
                 <Route path="/contacts">
-                    <Contacts />
+                    <Contacts updatelinkActive={updatelinkActive}/>
                 </Route>
                 <Route path="/projects">
-                    <Projects />
+                    <Projects updatelinkActive={updatelinkActive}/>
                 </Route>
                 <Route path="/">
-                    <Landing />
+                    <Landing updatelinkActive={updatelinkActive}/>
                 </Route>
             </Switch>
                 </animated.div> 

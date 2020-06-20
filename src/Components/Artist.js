@@ -5,6 +5,10 @@ import { Paper } from '@material-ui/core'
 import HeaderDeco from './HeaderDeco'
 import TitleSection from './TitleSection'
 export default class Artist extends Component {
+    constructor(props){
+        super(props)
+        this.props.updatelinkActive(1)
+    }
     render() {
         return (
             <div >

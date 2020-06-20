@@ -21,7 +21,7 @@ export default class Landing extends Component {
                <LatestProjects />
                <div className="about-artist">
                     <h3>
-                       A props d'elyes
+                    À propos d'Elyes
                    </h3>
                     <div className="about-content">
                         <div className="artist-circle artist-circle-2">

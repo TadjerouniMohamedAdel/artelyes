@@ -10,9 +10,9 @@ export default class Footer extends Component {
                         <img src={artelyesLogo} className="logo-footer"/>
                     </div>
                     <div className="dev-content">
-                        <h3 className="artist-font">A props du site :</h3>
-                        <p className="description-font" style={{color:'#777'}}>
-                            Artelyes est  site  dedie a la presentation et la publication des ouevres d'art de Mr Elyes Taib Lamine
+                        <h3 className="artist-font">À propos du site :</h3>
+                        <p className="description-font" style={{color:'#777',marginTop:-5}}>
+                        Artelyes est un site web dédié à la présentation et la publication des oeuvres d'art de Mr Elyes Taib Lamine
                         </p>
                     </div>
                 </div>
@@ -21,7 +21,7 @@ export default class Footer extends Component {
                             <img src={adel} />
                         </div>
                     <div className="dev-content">
-                        <h3 className="artist-font">Ce site est cree par:</h3>
+                        <h3 className="artist-font">Ce site est créé :</h3>
                             <div>
                                 <span className="dev-name artist-font">
                                     Adel Mohamed Tadjerouni

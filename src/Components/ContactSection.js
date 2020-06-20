@@ -47,7 +47,7 @@ export default class ContactSection extends Component {
                                 <TextField 
                                     id="outlined-basic" 
                                     className="input-contact"
-                                    label="Full Name" 
+                                    label="Nom Complet" 
                                     variant="outlined" />
                             </div>
                             <div>
@@ -76,7 +76,7 @@ export default class ContactSection extends Component {
                             </div>
                             <div>
                                 <a className="readmore" href="#" style={{marginTop:10}}>
-                                        Envoyer un message
+                                        Envoyer le message
                                     </a>
                             </div>
 
