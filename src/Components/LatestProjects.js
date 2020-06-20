@@ -16,6 +16,10 @@ const data=[
 ]
 
 const params = {
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
     effect: 'coverflow',
     grabCursor: true,
     centeredSlides: true,
