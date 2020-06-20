@@ -11,8 +11,13 @@ export default function PersonalCard() {
                         </div> 
                         <div className="personal-details-1">
                             <div className="personal-content-1">
-                                <div>
-                                    <img src={artelyesLogo} className="logo-landing"/>
+                                <div className="image-content">
+                                    <div className="artist-circle-p artist-circle-2">
+                                        <img src={elyes1} />
+                                    </div>
+                                    <div>
+                                        <img src={artelyesLogo} className="logo-landing"/>
+                                    </div>
                                 </div>
                                 <h2 className="artist-font">
                                     Elyes Tayeb Lamine 
