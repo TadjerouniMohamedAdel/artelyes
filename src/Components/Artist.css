@@ -1,7 +1,19 @@
+.artist-section{
+    padding:40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card-artist{
+    margin-bottom: 70px;
+    margin-top: 70px;
+    width:80%;
+}
 .profile-section{
     position:relative;
     width: 100%;
-    padding:50px;
+    padding:60px;
     margin-top: -20px;
 }
 
@@ -13,7 +25,7 @@
 .circle.circle1{
     width:220px;
     height:220px;
-    float: left;
+    float: right;
     border-radius: 50%;
     margin:20px;
     margin-top: 40px;
@@ -27,6 +39,12 @@
     width:100%;
     height:100%;
     object-fit:cover
+}
+.first-letter{
+    font-size: 75px;
+  line-height: 35px;
+  float: left;
+  font-style: unset;
 }
 .profile-section-title{
     font-size: 28px;
@@ -47,8 +65,8 @@
 .circle.circle2{
     width:300px;
     height:300px;
-    float: right;
-    border-radius: 50%;
+    float: left;
+    border-radius: 30%;
     margin:20px;
     shape-outside: circle();
 }
