@@ -37,6 +37,7 @@ export const elyes4 = require("./Images/elyes4.jpg")
 
 export const artist1 = require("./Images/artist1.jpg")
 export const artist2 = require("./Images/artist2.jpg")
+export const artist3 = require("./Images/artist3.jpg")
 export const artelyesLogo = require("./Images/artelyes_logo.png")
 export const underline = require("./Images/underline.png")
 export const top = require("./Images/top.png")

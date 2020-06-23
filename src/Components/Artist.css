@@ -9,6 +9,7 @@
     margin-bottom: 70px;
     margin-top: 70px;
     width:80%;
+    box-shadow: 2px 2px 4px 2px #e2e2e2 !important;
 }
 .profile-section{
     position:relative;
@@ -64,18 +65,140 @@
 }
 .circle.circle2{
     width:300px;
+    top:10px;
     height:300px;
     float: left;
     border-radius: 30%;
     margin:20px;
+    margin-right: 35px;
     shape-outside: circle();
 }
 .circle.circle3{
     width:350px;
     height:350px;
-    float: right;
-    border-radius: 50%;
+    /* float: right; */
+    border-radius: 10%;
     /* margin:0px; */
     margin-top: 50px;
     /* shape-outside: circle(); */
+}
+.img-artist-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap ;
+}
+.img-artist-container div{
+    margin:20px;
+}
+@media(max-width:900px){
+    .profile-section p{
+        color:#000;
+        font-size: 17px;
+        padding: 40px;
+    }
+    .card-artist{       
+        width:90%;
+    }
+}
+@media(max-width:735px){
+    .profile-section p{
+        color:#000;
+        font-size: 16px;
+        padding: 20px;
+    }
+    .card-artist{       
+        width:90%;
+    }
+    .circle.circle2{
+        width:300px;
+        top:10px;
+        height:300px;
+        float: unset;
+        border-radius: 30%;
+        margin:20px;
+        margin-right: 35px;
+        shape-outside: circle();
+    }
+    .circle.circle1{
+        float: unset;
+    }
+    .circle2-container{
+        width: 100%;
+        padding:0px;
+        display: flex;
+        justify-content: center;
+    }
+    .circle1-container{
+        width: 100%;
+        padding:0px;
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+@media(max-width:508px){
+    .profile-section{
+        padding:20px;
+    }
+    .circle2-container{
+        width: 100%;
+        padding:0px;
+        display: flex;
+        justify-content: center;
+    }
+    .circle1-container{
+        width: 100%;
+        padding:0px;
+        display: flex;
+        justify-content: center;
+    }
+    .card-artist{       
+        width:100%;
+    }
+    .circle.circle3{
+        width:400px;
+        height:200px;
+        
+    }
+    .circle.circle2{
+        padding:0px;
+        width:400px;
+        height:200px;
+        display: flex;
+        justify-content: center; 
+    }
+    
+}
+@media(max-width:400px){
+    .profile-section{
+        padding:10px;
+    }
+    .circle2-container{
+        width: 100%;
+        padding:0px;
+        display: flex;
+        justify-content: center;
+    }
+    .card-artist{       
+        width:100%;
+    }
+    .circle.circle3{
+        width:200px;
+        height:200px;
+        
+    }
+    .circle.circle2{
+        padding:0px;
+        width:400px;
+        height:200px;
+        display: flex;
+        justify-content: center; 
+    }
+    .circle.circle1{
+        width:150px;
+        height:150px;
+        
+    }
+    
 }
