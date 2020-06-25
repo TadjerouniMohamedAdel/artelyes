@@ -1,10 +1,12 @@
 import React from 'react';
 import  './App.css'
 import { useLocation } from 'react-router-dom'
+import emailjs from 'emailjs-com';
 
 
 import TopNavigation from './Components/TopNavigation'
 function App() {
+  emailjs.init(process.env.REACT_APP_EMAIL_USER_ID);
   let location = useLocation();
   let root =0;
   switch (location.pathname) {

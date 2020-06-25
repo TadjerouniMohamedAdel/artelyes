@@ -6,8 +6,7 @@
     align-items: center;
 }
 .card-artist{
-    margin-bottom: 70px;
-    margin-top: 70px;
+    margin-bottom: 50px;
     width:80%;
     box-shadow: 2px 2px 4px 2px #e2e2e2 !important;
 }
