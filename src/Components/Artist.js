@@ -13,12 +13,12 @@ export default class Artist extends Component {
         return (
             <div className="artist-section">
                <HeaderDeco />
-                <TitleSection title="Elyes Taib Lamine" />
+                <TitleSection title="Elyes Tayeb Lamine" />
                 <Paper className="card-artist">
                 <section className="profile-section">
                     <div className="circle1-container">
                         <div className="circle circle1">
-                            <img src={elyes1} alt="Elyes Taib Lamine"/>
+                            <img src={elyes1} alt="Elyes Tayeb Lamine"/>
                         </div>
                     </div>
                     <div>
@@ -35,7 +35,7 @@ export default class Artist extends Component {
                 <section className="profile-section">
                 <div className="circle2-container">
                 <div className="circle circle2">
-                    <img src={artist2} alt="Elyes Taib Lamine"/>
+                    <img src={artist2} alt="Elyes Tayeb Lamine"/>
                 </div>
 
                 </div>
@@ -53,10 +53,10 @@ export default class Artist extends Component {
                         </p>
                     <div className="img-artist-container">
                         <div className="circle circle3">
-                                <img src={artist1} alt="Elyes Taib Lamine"/>
+                                <img src={artist1} alt="Elyes Tayeb Lamine"/>
                         </div>
                         <div className="circle circle3">
-                                <img src={artist3} alt="Elyes Taib Lamine"/>
+                                <img src={artist3} alt="Elyes Tayeb Lamine"/>
                         </div>
 
                     </div> 

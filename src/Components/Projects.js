@@ -31,7 +31,6 @@ const data=[
     {title:"Ruelle de la Casbah",image:casbah2,price:"195",dimmentions:"46.5x38",description:"Ruelle de la Casbah Peinture a l'hulile"},
     {title:"Ruelle de la Casbah",image:casbah3,price:"195",dimentions:"46.5x38",description:"Ruelle de la Casbah Peinture a l'hulile",},
     {title:"Ruelle de la Casbah",image:casbah4,price:"195",dimentions:"46.5x38",description:"Ruelle de la Casbah Peinture a l'hulile"},
-    {title:"Pont Inconnu",image:pont1,description:"Sint qui sit id irure ipsum qui consectetur nostrud. ",price:"",dimentions:""},
     {title:"Vercruysse la descente",image:neige,description:"Toile tendue Peinture a l’huile. ",price:"1290",dimentions:"80x60"},
     {title:"Le vieux pont de Chatou",image:vieux_pont,price:"350",dimentions:"",description:"Peinture à l'huile Le vieux pont de Chatou pour décoration"},
     {title:"Orsay au loin",image:orsay_de_loin,price:"550",dimentions:"38x46",description:"Cette composition linéaire et horizontale confère à cette oeuvre incroyable quiétude dont seuls les clapotais de l'eau résonnent encore."},

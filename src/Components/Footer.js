@@ -12,7 +12,7 @@ export default class Footer extends Component {
                     <div className="dev-content">
                         <h3 className="artist-font">À propos du site :</h3>
                         <p className="description-font" style={{color:'#777',marginTop:-5}}>
-                        Artelyes est un site web dédié à la présentation et la publication des oeuvres d'art de Mr Elyes Taib Lamine
+                        Artelyes est un site web dédié à la présentation et la publication des oeuvres d'art de Mr Elyes Tayeb Lamine
                         </p>
                     </div>
                 </div>
