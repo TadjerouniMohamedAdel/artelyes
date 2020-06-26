@@ -62,8 +62,29 @@ export default class Projects extends Component {
         })
     }
 
-    shareProject = (item)=>{
+    shareProject = (item,type)=>{
         console.log(item)
+        switch (type) {
+            case "facebook":
+                     
+                break;
+            case "linkedin":
+                    
+                break;
+            case "twitter":
+                
+                break;
+            case "instagram":
+                    
+                break;
+            case "pinterest":
+                
+                break;
+
+        
+            default:
+                break;
+        }
     }
     
 
@@ -112,11 +133,11 @@ export default class Projects extends Component {
                                     </div>
                                     <div className="share-menu">
                                         <ul>
-                                            <li className="facebook"><a href="#" onClick={()=>this.shareProject(item)}><i className="fa fa-facebook"></i></a></li>
-                                            <li className="twitter"><a href="#" onClick={()=>this.shareProject(item)}><i className="fa fa-twitter"></i></a></li>
-                                            <li className="instagram"><a href="#" onClick={()=>this.shareProject(item)}><i className="fa fa-instagram"></i></a></li>
-                                            <li className="linkedin"><a href="#" onClick={()=>this.shareProject(item)}><i className="fa fa-linkedin"></i></a></li>
-                                            <li className="pinterest"><a href="#" onClick={()=>this.shareProject(item)}><i className="fa fa-pinterest"></i></a></li>
+                                            <li className="facebook"><a href="#" onClick={()=>this.shareProject(item,"facebook")}><i className="fa fa-facebook"></i></a></li>
+                                            <li className="twitter"><a href="#" onClick={()=>this.shareProject(item,"twitter")}><i className="fa fa-twitter"></i></a></li>
+                                            <li className="instagram"><a href="#" onClick={()=>this.shareProject(item,"instagram")}><i className="fa fa-instagram"></i></a></li>
+                                            <li className="linkedin"><a href="#" onClick={()=>this.shareProject(item,"linkedin")}><i className="fa fa-linkedin"></i></a></li>
+                                            <li className="pinterest"><a href="#" onClick={()=>this.shareProject(item,"pinterest")}><i className="fa fa-pinterest"></i></a></li>
                                         </ul>
                                     </div>
                             </Paper>

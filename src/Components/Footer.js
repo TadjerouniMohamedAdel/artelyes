@@ -30,18 +30,12 @@ export default class Footer extends Component {
                                        Full Stack web & mobile developer
                                     </span>
                             </div>
-                        {/* <ul className="social-dev">
-                            <li><a href="#"><i className="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i className="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i className="fa fa-skype"></i></a></li>
-                            <li><a href="#"><i className="fa fa-github"></i></a></li>
-                        </ul> */}
                         <div className="social-dev">
                             <ul>
-                                <li className="linkedin"><a href="#"><i className="fa fa-linkedin"></i></a></li>
-                                <li className="github"><a href="#"><i className="fa fa-github"></i></a></li>
-                                <li className="facebook"><a href="#"><i className="fa fa-facebook"></i></a></li>
-                                <li className="skype"><a href="#"><i className="fa fa-skype"></i></a></li>
+                                <li className="linkedin"><a target="_blank" href="https://www.linkedin.com/in/adel-mohamed-tadjerouni-147546164/"><i className="fa fa-linkedin"></i></a></li>
+                                <li className="github"><a target="_blank" href="https://github.com/TadjerouniMohamedAdel"><i className="fa fa-github"></i></a></li>
+                                <li className="facebook"><a target="_blank" href="https://web.facebook.com/adelnagato.tadj"><i className="fa fa-facebook"></i></a></li>
+                                <li className="skype"><a target="_blank" href="https://join.skype.com/invite/afq6nmhgxMgr"><i className="fa fa-skype"></i></a></li>
                             </ul>
                         </div>
                     </div>
