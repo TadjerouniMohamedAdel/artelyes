@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
-import { Paper, Typography, Button } from '@material-ui/core'
+import { Paper, Button } from '@material-ui/core'
 import './Projects.css'
-import { academie,orsay_de_loin, avenue_fleurs,plateau2,pont1,neige,vieux_pont,casbah1,casbah2,casbah3,casbah4,casbah5,entreCopines, bastille, demandeMariage, peniche, pontNapoleon, grandOrsay, saintLouis1, saintLouis2, solitaire, notreDame, pontsAmours, promeneur, pecheur, fleursSous, juleVer, plateau, underline, top, alger1,alger2 } from '../Images'
-import {Spring} from 'react-spring/renderprops'
+import { academie,orsay_de_loin, avenue_fleurs,pont1,neige,vieux_pont,casbah1,casbah2,casbah3,casbah4,casbah5,entreCopines, bastille, demandeMariage, peniche, pontNapoleon, grandOrsay, saintLouis1, saintLouis2, solitaire, notreDame, pontsAmours, promeneur, pecheur, fleursSous, juleVer, plateau,  alger1,alger2 } from '../Images'
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css'; // This only needs to be imported once in your app
 import HeaderDeco from './HeaderDeco'
@@ -117,7 +116,7 @@ export default class Projects extends Component {
                                 //     {props =>
                                 <Paper key={index} className="project-item" >
                                     <div>
-                                        <img src={item.image} className="project-image"/>
+                                        <img src={item.image} className="project-image" alt={"Oeuvre d'Elyes Taib Lamine "+item.title}/>
                                     </div>
                                     <h3 className="artist-font project-title">
                                         {item.title}

@@ -1,13 +1,9 @@
 import React, { Component } from 'react'
 import './Landing.css'
-import { elyes2, elyes1, demandeMariage, saintLouis2, peniche, pontNapoleon, academie, grandOrsay, saintLouis1, bastille, elyes4, elyes3, artelyesLogo } from '../Images'
-import { Paper,Button,Icon, TextField } from '@material-ui/core'
-import Swiper from 'react-id-swiper';
+import { elyes3 } from '../Images'
 import {Link} from 'react-router-dom'
-
 import 'swiper/css/swiper.css'
 import ContactSection from './ContactSection';
-import SocialMenuArtist from './SocialMenuArtist';
 import PersonalCard from './PersonalCard';
 import LatestProjects from './LatestProjects';
 
@@ -25,7 +21,7 @@ export default class Landing extends Component {
                    </h3>
                     <div className="about-content">
                         <div className="artist-circle artist-circle-2">
-                            <img src={elyes3} />
+                            <img src={elyes3} alt="Elyes Taib Laimne" />
                         </div>
                         <p className="about-artist-text description-font">
                             <b>l'artist dit souvent : </b><br/>

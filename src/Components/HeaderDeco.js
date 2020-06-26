@@ -4,7 +4,7 @@ import './HeaderDeco.css'
 export default function HeaderDeco() {
     return (
         <div style={{textAlign:"center",marginTop:20}}>
-              <img className="header-deco" src={top} />
+              <img className="header-deco" src={top} alt="header decoration"/>
         </div>
     )
 }

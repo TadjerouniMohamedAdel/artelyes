@@ -1,8 +1,8 @@
 import React from 'react'
-import { Paper,Button,Icon, TextField } from '@material-ui/core'
+import { Paper } from '@material-ui/core'
 import Swiper from 'react-id-swiper';
 import {Link} from 'react-router-dom'
-import { elyes2, elyes1, demandeMariage, saintLouis2, peniche, pontNapoleon, academie, grandOrsay, saintLouis1, bastille, elyes4, elyes3, artelyesLogo } from '../Images'
+import { demandeMariage, saintLouis2, peniche, pontNapoleon, academie, grandOrsay, saintLouis1, bastille } from '../Images'
 import './LatestProjects.css'
 const data=[
     {title:"La demande en mariage",image:demandeMariage,description:"Sint qui sit id irure ipsum qui consectetur nostrud. Tempor aliquip aliquip in veniam commodo deserunt commodo id velit Lorem. Amet cupidatat duis excepteur sunt magna. Consectetur incididunt amet qui anim fugiat sint nulla. Aliqua eiusmod deserunt reprehenderit Lorem excepteur incididunt. Nisi sit reprehenderit ullamco Lorem eiusmod. Anim minim labore minim dolor eu officia."},
@@ -51,7 +51,7 @@ export default function LatestProjects() {
                             return(
                                 <Paper key={index} className="project-item-swip" >
                                     <div>
-                                        <img src={item.image} className="project-image-swip"/>
+                                        <img src={item.image} className="project-image-swip" alt={"Oeuvre d'Elyes Taib Lamine "+item.title}/>
                                     </div>
                                     <h3 className="artist-font project-title-swip">
                                         {item.title}

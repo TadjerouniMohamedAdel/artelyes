@@ -7,7 +7,7 @@ export default class Footer extends Component {
             <footer className="footer">
                 <div className="footer-section">
                     <div className="logo-footer-section"> 
-                        <img src={artelyesLogo} className="logo-footer"/>
+                        <img src={artelyesLogo} className="logo-footer" alt="artelyes"/>
                     </div>
                     <div className="dev-content">
                         <h3 className="artist-font">À propos du site :</h3>
@@ -18,7 +18,7 @@ export default class Footer extends Component {
                 </div>
                 <div className="footer-section">
                 <div className="artist-footer-circle artist-footer-circle-2">
-                            <img src={adel} />
+                            <img src={adel} alt="Adel Mohamed Tadjerouni (Full Stack Developer)"/>
                         </div>
                     <div className="dev-content">
                         <h3 className="artist-font">Ce site est créé :</h3>
@@ -32,10 +32,10 @@ export default class Footer extends Component {
                             </div>
                         <div className="social-dev">
                             <ul>
-                                <li className="linkedin"><a target="_blank" href="https://www.linkedin.com/in/adel-mohamed-tadjerouni-147546164/"><i className="fa fa-linkedin"></i></a></li>
-                                <li className="github"><a target="_blank" href="https://github.com/TadjerouniMohamedAdel"><i className="fa fa-github"></i></a></li>
-                                <li className="facebook"><a target="_blank" href="https://web.facebook.com/adelnagato.tadj"><i className="fa fa-facebook"></i></a></li>
-                                <li className="skype"><a target="_blank" href="https://join.skype.com/invite/afq6nmhgxMgr"><i className="fa fa-skype"></i></a></li>
+                                <li className="linkedin"><a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/adel-mohamed-tadjerouni-147546164/"><i className="fa fa-linkedin"></i></a></li>
+                                <li className="github"><a rel="noopener noreferrer" target="_blank" href="https://github.com/TadjerouniMohamedAdel"><i className="fa fa-github"></i></a></li>
+                                <li className="facebook"><a rel="noopener noreferrer" target="_blank" href="https://web.facebook.com/adelnagato.tadj"><i className="fa fa-facebook"></i></a></li>
+                                <li className="skype"><a rel="noopener noreferrer" target="_blank" href="https://join.skype.com/invite/afq6nmhgxMgr"><i className="fa fa-skype"></i></a></li>
                             </ul>
                         </div>
                     </div>

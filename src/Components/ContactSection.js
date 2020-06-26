@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Paper,Button,Icon, TextField } from '@material-ui/core'
+import { TextField } from '@material-ui/core'
 import './ContactSection.css'
 import { elyes1 } from '../Images'
 import SocialMenuArtist from './SocialMenuArtist'
@@ -139,7 +139,7 @@ export default class ContactSection extends Component {
                         Mes coordonnées
                         </h3>
                         <div className="artist-circle artist-circle-3">
-                            <img src={elyes1} />
+                            <img src={elyes1} alt="Elyes Taib Lamine"/>
                         </div>
                             <div className="contacts-paper-info-item description-font">
                                 <span><i className="fa fa-phone"></i></span>

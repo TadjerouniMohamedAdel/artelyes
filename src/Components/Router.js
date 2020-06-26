@@ -4,7 +4,7 @@ import Landing from './Landing'
 import Contacts from './Contacts'
 import Artist from './Artist'
 import Projects from './Projects'
-import {useSpring, useTransition,animated,config} from 'react-spring'
+import {useTransition,animated} from 'react-spring'
 
 
  const Router = function ({ updatelinkActive}) {

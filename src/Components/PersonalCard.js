@@ -8,16 +8,16 @@ export default function PersonalCard() {
         <div className="personal-container-1">
                    <div className="personal-card-1">
                        <div className="imgBx">
-                           <img src={elyes1} />
+                           <img src={elyes1} alt="Elyes Taib Lamine"/>
                         </div> 
                         <div className="personal-details-1">
                             <div className="personal-content-1">
                                 <div className="image-content">
                                     <div className="artist-circle-p artist-circle-2">
-                                        <img src={elyes1} />
+                                        <img src={elyes1} alt="Elyes Taib Lamine"/>
                                     </div>
                                     <div>
-                                        <img src={artelyesLogo} className="logo-landing"/>
+                                        <img src={artelyesLogo} className="logo-landing" alt="Artelyes" />
                                     </div>
                                 </div>
                                 <h2 className="artist-font">
