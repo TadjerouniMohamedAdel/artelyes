@@ -94,8 +94,6 @@ export default class Projects extends Component {
                  {this.state.isOpen && (
           <Lightbox
             mainSrc={this.state.image}
-            // nextSrc={images[(photoIndex + 1) % images.length]}
-            // prevSrc={images[(photoIndex + images.length - 1) % images.length]}
             onCloseRequest={() => this.setState({ isOpen: false })}
             imageTitle={this.state.title}
             imageCaption={this.state.caption}
@@ -108,12 +106,7 @@ export default class Projects extends Component {
                         data.map((item,index) =>{
                             
                             return(
-                                // <Spring
-                                //     key={index}
-                                //     from={{ transform:'scale(0)' }}
-                                //     // delay={2000+index*600}
-                                //     to={{ transform:'scale(1)' }}>
-                                //     {props =>
+                              
                                 <Paper key={index} className="project-item" >
                                     <div>
                                         <img src={item.image} className="project-image" alt={"Oeuvre d'Elyes Taib Lamine "+item.title}/>
@@ -140,9 +133,6 @@ export default class Projects extends Component {
                                         </ul>
                                     </div>
                             </Paper>
-                            //         }
-                            // </Spring>
-
                         )
                         })
                     }
