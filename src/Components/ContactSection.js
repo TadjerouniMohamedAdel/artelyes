@@ -143,14 +143,14 @@ export default class ContactSection extends Component {
                         </div>
                             <div className="contacts-paper-info-item description-font">
                                 <span><i className="fa fa-phone"></i></span>
-                                <span>0800 123 121 90</span>
+                                <span>+336 45 64 74 88</span>
                             </div>
                             <div className="contacts-paper-info-item description-font">
                                 <span>
                                      <i className="fa fa-envelope-o"></i>
                                 </span>
                                 <span>
-                                    Adsd@mail.com
+                                    elies_invite@yahoo.fr
                                 </span>
                             </div>
                             <div className="contacts-paper-info-item description-font">
@@ -158,7 +158,7 @@ export default class ContactSection extends Component {
                                     <i className="fa fa-home"></i>
                                 </span>
                                 <span>
-                                    Cite 3000 logement ilot 14 b11 Bouinana Blida Algerie
+                                Bagnolet, Île-de-France, France
                                 </span>
                             </div>
                             <div className="contacts-paper-social-menu">

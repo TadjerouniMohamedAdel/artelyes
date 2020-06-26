@@ -21,7 +21,7 @@ export default class Footer extends Component {
                             <img src={adel} alt="Adel Mohamed Tadjerouni (Full Stack Developer)"/>
                         </div>
                     <div className="dev-content">
-                        <h3 className="artist-font">Ce site est créé :</h3>
+                        <h3 className="artist-font">Ce site est créé par :</h3>
                             <div>
                                 <span className="dev-name artist-font">
                                     Adel Mohamed Tadjerouni
