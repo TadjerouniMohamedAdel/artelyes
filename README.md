@@ -20,7 +20,7 @@ Artelyes is a Art website</h4>
 
 ##  About this Project
 Artelyes is a website dedicated to the presentation and publication of the works of art of Mr Elyes Tayeb Lamine<br/>
-<a href="https://lyric-boot.netlify.app/">live demo </a>
+<a href="https://artelyes.netlify.app/">live demo </a>
 
 
 ## Installation
