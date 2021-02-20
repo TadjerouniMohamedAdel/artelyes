@@ -1,13 +1,18 @@
 import React, { Component } from 'react'
 import { Paper, Button } from '@material-ui/core'
 import './Projects.css'
-import { academie,orsay_de_loin, avenue_fleurs,pont1,neige,vieux_pont,casbah1,casbah2,casbah3,casbah4,casbah5,entreCopines, bastille, demandeMariage, peniche, pontNapoleon, grandOrsay, saintLouis1, saintLouis2, solitaire, notreDame, pontsAmours, promeneur, pecheur, fleursSous, juleVer, plateau,  alger1,alger2 } from '../Images'
+import { academie,orsay_de_loin,terrasse,casbah6,casbah7,casbah8,casbah9, avenue_fleurs,pont1,neige,vieux_pont,casbah1,casbah2,casbah3,casbah4,casbah5,entreCopines, bastille, demandeMariage, peniche, pontNapoleon, grandOrsay, saintLouis1, saintLouis2, solitaire, notreDame, pontsAmours, promeneur, pecheur, fleursSous, juleVer, plateau,  alger1,alger2 } from '../Images'
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css'; // This only needs to be imported once in your app
 import HeaderDeco from './HeaderDeco'
 import TitleSection from './TitleSection'
 
 const data=[
+    {title:"Les Terrasses",image:terrasse,price:"1100",dimentions:"80x60",description:""},
+    {title:"Femmes au hayek",image:casbah6,price:"590",dimentions:"40x50",description:""},
+    {title:"La rue Kléber",image:casbah7,price:"1100",dimentions:"60x80",description:""},
+    {title:"Vue sur la mer",image:casbah8,price:"1190",dimentions:"80x60",description:""},
+    {title:"Ruelle de la Casbah",image:casbah9,price:"395",dimentions:"40x50",description:""},
     {title:"La demande en mariage",image:demandeMariage,price:"600",dimentions:"38x46",description:"Ce tableau est réalisé vers la mi-juin, jour de fraîcheur matinale où la lumière et les tons sont d'un gris bleuté et frais. Les touches successives et colorées viennent donner le mouvement de l'eau et le bruit des flots."},
     {title:"Saint-Louis-en-île",image:saintLouis2,price:"695",dimentions:"38x46",description:"Tout indique le personnage au premier plan, baigné d'ombre et de lumière qui donne à ce tableau sa profondeur. "},
     {title:"La péniche du pont-neuf",image:peniche,price:"795",dimentions:"38x46",description:"Ici, la couleur jaune d'or du sujet en contraste avec l’amarrage des Pompiers de la seine en rouge donne toute la profondeur et un attrait particulier aux détails qui ne cessent de balader l’œil du spectateur d'un bout de la toile à l'autre..."},

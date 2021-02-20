@@ -42,5 +42,12 @@ export const artelyesLogo = require("./Images/artelyes_logo.png")
 export const underline = require("./Images/underline.png")
 export const top = require("./Images/top.png")
 
+
+export const casbah6 = require("./Images/casbah6.jpg")
+export const casbah7 = require("./Images/casbah7.jpg")
+export const casbah8 = require("./Images/casbah8.jpg")
+export const casbah9 = require("./Images/casbah9.jpg")
+export const terrasse = require("./Images/terrasse.jpg")
+
 export const adel = require("./Images/adel.jpg")
 
