@@ -57,8 +57,10 @@
     height: 285px;
 }
 
-.last-projects .link-projects{
-    font-size: 16px;
+.last-projects .link-projects a{
+    font-size: 24px;
+    margin-top:20px;
+    color: #d4af37;
 }
 @media(max-width:1000px){
     .last-projects .project-item-swip{
